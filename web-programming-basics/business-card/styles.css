@@ -1,0 +1,88 @@
+/* .card {
+    background-color: #ddebf8;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin: 20px auto;
+}
+.avatar {
+    width: 150px;
+    border-radius: 75px;
+}
+.description{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+ body {
+    margin: 0;
+    background-color: #051014;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+ .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+ }
+ .card {
+   width: 500px;
+   height: 400px;
+   /* background-color: #32746D; */
+   margin: 60px auto 0;
+   padding: 50px;
+   border-radius: 48px;
+   background-color: rgba(255, 248, 240, 0.15);
+ }
+ .avatar {
+    width: 120px;
+    border-radius: 0 0 60px 60px;
+    border: 2px solid #98eff7;
+    display: flex;
+    margin: 0px auto;
+ }
+ .description {
+    width: 500px;
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 0;
+ }
+ h1 {
+   font-weight: bold;
+   text-transform: uppercase;
+   color: white;
+   text-shadow: 2px 2px 2px black;
+ }
+ h4 {
+   color: #83858C;
+ }
+ .buttons {
+   display: flex;
+   justify-content: center;
+   font-size: 36px;
+   color: rgb(85, 26, 139);
+ }
+ a:hover {
+   color: white;
+ }
+ /* .btn-github, .btn-x-twitter {
+   color: black;
+ }
+ .btn-facebook {
+   color: #1877F2;
+ }
+ .btn-google {
+   color: rgb(214, 214, 214);
+ }
+ .btn-github:hover,
+ .btn-x-twitter:hover,
+ .btn-facebook:hover, 
+ .btn-google:hover {
+    color: rgb(85, 26, 139);
+ } */
+.year {
+   margin-top: 50px;
+   font-size: 16px;
+   color:#83858C;
+}
