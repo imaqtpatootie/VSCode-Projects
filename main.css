@@ -43,6 +43,7 @@ nav a{
 }
 nav ul li:not(:first-child) a:hover{
     color: #07BEB8;
+    background-color: #07beb823;
 }
 nav ul li:first-child {
     margin-right: auto;
