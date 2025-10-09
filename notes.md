@@ -66,4 +66,12 @@ I've learned that:
     .webp is the same as .gif but much lighter.
 
     i need to name classes or ids as specific as possible for easier understanding for the other collaborators.
+
+    when naming classes, you can add title then description for easier identification when editing. for example, div.gift-wrapper and h2.gift-title
+
+    when an element has fixed width, to center, you use margin: 0 auto;
 ---------------------------------------------------
+
+Theories
+
+    using flex-direction: row; for navigations
