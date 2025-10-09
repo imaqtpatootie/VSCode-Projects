@@ -23,7 +23,7 @@ nav {
 nav ul {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     align-items: center;
     text-align: center;
     list-style: none;
@@ -83,7 +83,7 @@ nav ul li:first-child {
 }
 .sidebar li:first-child {
     display:flex;
-    justify-content: flex-end;
+    justify-content: end;
 }
 @media (max-width: 700px) {
     .not-mobile-view {
