@@ -4,42 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Joseph Emmanuel N. Calvo</title>
-    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/my-icon.png">
 </head>
 <body>
     <div class="container">
         <!-- Hero Section -->
-        <nav>
-            <ul class="sidebar">
-                <li onclick=hideSidebar() class="close">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#f0f0f0">
-                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg>
-                    </a>
-                </li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="./web-programming-basics/">Projects</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://github.com/imaqtpatootie" class="author-at">@imaqtpatootie</a></li>
-                <li><a class="not-mobile-view underline" href="#">Home</a></li>
-                <li><a class="not-mobile-view underline" href="#">About</a></li>
-                <li><a class="not-mobile-view underline" href="#">Contact</a></li>
-                <li><a class="not-mobile-view underline" href="./web-programming-basics/">Projects</a></li>
-                <li onclick=showSidebar()>
-                    <a href="#" class="menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#f0f0f0">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <section id="hero">
+            <div class="darken">
+                <nav class="nav-bar">
+                <!-- <ul class="sidebar">
+                        <li onclick=hideSidebar() class="close">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#f0f0f0">
+                                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="./web-programming-basics/">Projects</a></li>
+                    </ul> -->
+                    <ul>
+                        <li><img src="./imgs/my-icon.png" alt="My Icon" class="hero-icon"><a href="https://github.com/imaqtpatootie" id="author-at">@imaqtpatootie</a></li>
+                        <li><a class="not-mobile-view underline" href="#hero">Home</a></li>
+                        <li><a class="not-mobile-view underline" href="#portfolio">Portfolio</a></li>
+                        <li><a class="not-mobile-view underline" href="#about">About</a></li>
+                        
+                        <li><a class="not-mobile-view underline" href="#contact">Contact</a></li>
+                        <!-- <li onclick=showSidebar()>
+                            <a href="#" class="menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                                    fill="#f0f0f0">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg>
+                            </a>
+                        </li> -->
+                    </ul>
+                </nav>
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm <span class="author-name">Jo</span>.</h1>
+                    <p class="hero-description">I'm an aspiring front-end web developer with a passion for creating interactive and functional websites.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2 class="portfolio-title"><a href="./web-programming-basics/">My Projects</a></h2>
+            <div class="portfolio-card">
+                <div class="portfolio-card-text">
+                    <h4 class="breadcrumb">html.css / card</h4>
+                    <p class="description">A simple business card layout created with HTML and CSS when I was starting out.</p>
+                    <a href="https://github.com/imaqtpatootie/VSCode-Projects/tree/main/web-programming-basics/business-card" class="link-to-github" target="_blank">See full project on GitHub</a>
+                </div>
+                <img src="./imgs/card.png" alt="Business card project">
+            </div>
+        </section>
+        <section id="about">
+            <h2 class="about-title">About me</h2>
+        </section>
+        <section id="contact">
+            <h2 class="contact-title">Contact me</h2>
+        </section>
     </div>
-    <script>
+    <!-- <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'flex'
@@ -48,6 +77,6 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none';
         }
-    </script>
+    </script> -->
 </body>
 </html>
