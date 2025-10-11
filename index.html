@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Joseph Emmanuel N. Calvo</title>
-    <!-- <link rel="stylesheet" href="main.css"> -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="./main.css"> -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./utility.css">
     <link rel="icon" type="image/x-icon" href="./imgs/my-icon.png">
 </head>
 <body>
@@ -30,9 +31,8 @@
                     <ul>
                         <li><img src="./imgs/my-icon.png" alt="My Icon" class="hero-icon"><a href="https://github.com/imaqtpatootie" id="author-at">@imaqtpatootie</a></li>
                         <li><a class="not-mobile-view underline" href="#hero">Home</a></li>
-                        <li><a class="not-mobile-view underline" href="#portfolio">Portfolio</a></li>
                         <li><a class="not-mobile-view underline" href="#about">About</a></li>
-                        
+                        <li><a class="not-mobile-view underline" href="#portfolio">Portfolio</a></li>
                         <li><a class="not-mobile-view underline" href="#contact">Contact</a></li>
                         <!-- <li onclick=showSidebar()>
                             <a href="#" class="menu">
@@ -50,19 +50,32 @@
                 </div>
             </div>
         </section>
+        <section id="about">
+            <h2 class="about-title">About</h2>
+            <p>I'm <span class="bold">Joseph Emmanuel N. Calvo</span>, and this website serves as my portfolio. I also treat it as a record of my progress in web development. I relearned everything from scratch through YouTube. I discovered a 48-hour video titled <span class="italic">“How to Become a Full-Stack Developer from Scratch”</span> on the <a href="https://www.youtube.com/@freecodecamp" class="no-underline white bold">freeCodeCamp.org</a> YouTube channel, and it reignited my passion for learning.I'm deeply grateful to <a href="https://www.youtube.com/@Scrimba" class="no-underline bold white">Scrimba</a> and <a href="https://www.youtube.com/@freecodecamp" class="no-underline white bold">freeCodeCamp.org</a> for this opportunity.</p>
+        </section>
         <section id="portfolio">
             <h2 class="portfolio-title"><a href="./web-programming-basics/">My Projects</a></h2>
             <div class="portfolio-card">
                 <div class="portfolio-card-text">
                     <h4 class="breadcrumb">html.css / card</h4>
-                    <p class="description">A simple business card layout created with HTML and CSS when I was starting out.</p>
-                    <a href="https://github.com/imaqtpatootie/VSCode-Projects/tree/main/web-programming-basics/business-card" class="link-to-github" target="_blank">See full project on GitHub</a>
+                    <p class="description">A simple business card layout created with HTML and CSS when I was starting out. This is made up of the basics of html, css and classes.</p>
+                    <a href="https://github.com/imaqtpatootie/VSCode-Projects/tree/main/web-programming-basics/business-card" class="link-to-github" target="_blank">See full project on GitHub.</a>
                 </div>
                 <img src="./imgs/card.png" alt="Business card project">
             </div>
-        </section>
-        <section id="about">
-            <h2 class="about-title">About me</h2>
+            <div class="portfolio-space-exploration">
+                <div class="portfolio-space-exploration-text">
+                    <h4 class="breadcrumb">html.css / space exploration</h4>
+                    <p class="description">Here, i've learned about using background-image, hover, css shorthands, importing fonts, do-not-repeat-yourself (DRY), specificity, and flexbox.</p>
+                </div>
+            </div>
+            <div class="portfolio-birthday-website">
+                <div class="portfolio-birthday-website">
+                    <h4 class="breadcrumb">html.css / birthday website</h4>
+                    <p class="description">This is where i learned nesting, inheritance pseudo-elements, and using utility classes.</p>
+                </div>
+            </div>
         </section>
         <section id="contact">
             <h2 class="contact-title">Contact me</h2>

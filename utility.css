@@ -1,0 +1,12 @@
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 800;
+}
+.no-underline {
+    text-decoration: none;
+}
+.white {
+    color: #f0f0f0;
+}
