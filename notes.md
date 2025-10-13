@@ -75,3 +75,25 @@ I've learned that:
 Theories
 
     using flex-direction: row; for navigations
+
+
+
+
+
+
+------------------------------------------------------
+Javascript
+    D-1
+        Learned variable
+        Basic mathematical operation
+        console log
+        increments
+        function
+        event listener
+        pass in arguments
+        DOM (Document Object Model) - how to use javascript to modify a website
+        datatypes
+        concatenation
+        escape
+        plus equal technique
+        innerText > textContent

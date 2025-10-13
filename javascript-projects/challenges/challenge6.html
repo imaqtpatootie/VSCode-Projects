@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge #6</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .value {
+                margin-bottom: 2rem;
+            }
+            .nums {
+                font-size: 5rem;
+                padding: 1rem 2rem;
+                margin: 1rem;
+                border: 2px black solid;
+            }
+            .buttons {
+                width: 50%;
+                margin: 0 auto 2rem;
+                text-align: center;
+            }
+            button {
+                padding: 1rem 2rem;
+                width: 40%;
+                background-color: transparent;
+                margin: .5rem;
+                transition: color .15s, background-color .15s;
+                cursor: pointer;
+            }
+            #add {
+                border: blue 1px solid;
+                color: blue;
+            }
+            #minus {
+                border: 1px solid red;
+                color: red;
+            }
+            #times {
+                border: 1px solid green;
+                color: green;
+            }
+            #divide {
+                border: 1px solid purple;
+                color: purple;
+            }
+            #add:hover {
+                color: white;
+                background-color: blue;
+            }
+            #minus:hover {
+                color: white;
+                background-color: red;
+            }
+            #times:hover {
+                color: white;
+                background-color: green;
+            }
+            #divide:hover {
+                color: white;
+                background-color: purple;
+            }
+            #value {
+                font-size: 6rem;
+                font-weight: 800;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="value">
+                <span id="num1" class="nums">0</span>
+                <span id="num2" class="nums">0</span>
+            </div>
+            <div class="buttons">
+                <button id="add" onclick="add()">Add</button>
+                <button id="minus" onclick="subtract()">Subtract</button>
+                <button id="times" onclick="multiply()">Multiply</button>
+                <button id="divide" onclick="divide()">Divide</button>
+            </div>
+            <span id="value">0</span>
+        </div>
+
+        <script>
+            let num1 = 10
+            let num2 = 2
+            let getNum1 = document.getElementById("num1")
+            let getNum2 = document.getElementById("num2")
+            let getValue = document.getElementById("value")
+            getNum1.textContent = num1
+            getNum2.textContent = num2
+            function add(){
+                let result = num1 + num2
+                getValue.textContent = "Sum: " + result
+            }
+            function subtract(){
+                let result = num1 - num2
+                getValue.textContent = "Difference: " + result
+            }
+            function multiply() {
+                let result = num1 * num2
+                getValue.textContent = "Product: " + result
+            }
+            function divide() {
+                let result = num1 / num2
+                getValue.textContent = "Quotient: " + result
+            }
+            
+        </script>
+    </body>
+    </html>
