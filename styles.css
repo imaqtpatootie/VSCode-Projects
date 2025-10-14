@@ -8,10 +8,12 @@
 }
 .container {
     background-color: #051014;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Pixelify Sans', monospace ;
     color: #f0f0f0;
     max-width: 100vw;
 }
+
+/* Hero section */
 #hero {
     height: 100vh;
     background-image: url('./imgs/sloth.jpg');
@@ -26,9 +28,7 @@
     height: inherit;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .nav-bar{
-    /* background-color: black; */
     padding: 0 1.4rem;
 }
 .hero-icon {
@@ -113,6 +113,23 @@
     padding-left: 1rem;
     margin-bottom: 3rem;
 }
+
+/* About section */
+.about-title {
+    border-left: 4px solid #990030;
+}
+.about-content:nth-child(even){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.how-i-started {
+    background-color: rgba(255, 255, 255, 0.015);
+    padding: 1rem 2rem;
+    border-right: 2px solid #990030;
+}
+
+/* Portfolio Section */
 .portfolio-title {
     border-left: 4px solid #551a8b;
 }
@@ -120,15 +137,16 @@
     text-decoration: none; 
     color: white;
 }
-.portfolio-card{
+.portfolio-card, .portfolio-blackjack-game{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 2rem;
 }
-.portfolio-card-text {
+.portfolio-card-text, .portfolio-blackjack-game-text {
     background-color: rgba(255, 255, 255, 0.015);
     border-radius: 2rem 0 0 2rem;
-    max-width: 400px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     padding: 2rem 1.5rem;
@@ -148,16 +166,18 @@
 .link-to-github:hover {
     text-decoration: underline;
 }
-.portfolio-card img {
+
+.portfolio-card img, .portfolio-blackjack-game img {
     border: .2rem solid #551a8b;
     max-width: 40%;
+}
+.portfolio-card img {
     border-radius: 0 2rem 2rem 0;
+}
+.portfolio-blackjack-game img {
+    border-radius: 2rem 0 0 2rem;
 }
 
 .contact-title {
     border-left: 4px solid cyan;
-}
-
-.about-title {
-    border-left: 4px solid #990030;
 }

@@ -97,3 +97,15 @@ Javascript
         escape
         plus equal technique
         innerText > textContent
+
+    D-2
+        elseIf
+    D-3
+        boolean
+        querySelector
+        array
+        zero index
+        composite data type
+        .length
+        .push
+        .pop
