@@ -1,52 +1,73 @@
-let isAlive = true
+let isAlive = false
 let hasBlackjack = false
 
-let firstCard = 7
-let secondCard = 10
-let cards = [firstCard, secondCard]
-let sum = cards[0] + cards[1]
+let cards = []
+let sum = 0
 
 let messageEl = document.querySelector("#message")
 let cardsEl = document.querySelector("#cards")
 let cardValueEl = document.querySelector("#sum")
+let message = ""
+
+let player = {
+    name: "Jo",
+    chips: 420
+}
+// let playerName = "Jo"
+// let playerChips = 420
+let playerStatus = document.querySelector("#player-el")
+playerStatus.textContent = player.name + ": $" + player.chips
+
+function getRandomCard() {
+    let randomNumber = Math.floor(Math.random() * 13) + 1
+    if (randomNumber === 1) {
+        return 11
+    } else if (randomNumber > 10) {
+        return 10
+    } else {
+        return randomNumber
+    }
+}
 
 function startGame(){
+    isAlive = true
+    hasBlackjack = false
+    firstCard = getRandomCard()
+    secondCard = getRandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
     renderGame()
 }
-function renderGame(){
 
+function renderGame(){
+    cardsEl.textContent = null
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
+    cardValueEl.textContent = "Result: " + sum
     if (sum === 21) {
-        messageEl.textContent = "You've got a blackjack!"
+        message = "You got a blackjack!"
         hasBlackjack = true
         isAlive = false
     } else if (sum < 21) {
-        messageEl.textContent = "Wanna draw another card?"
+        if (!isAlive){
+            message = "You lost!"
+        } else {
+            message = "Wanna draw another card?"
+        }
     } else {
-        messageEl.textContent = "You lost!"
+        message = "You lost!"
         isAlive = false
     }
-    cardsEl.textContent = cards[0] + " " + cards[1] 
-    cardValueEl.textContent = "Result: " + sum
+    messageEl.textContent = message
 }
 function drawCard(){
-    if (isAlive){
-        thirdCard = 3
+    if (isAlive && !hasBlackjack){
+        let thirdCard = getRandomCard()
+        sum += thirdCard
         cards.push(thirdCard)
-        sum += cards[2]
-        if (sum === 21) {
-            messageEl.textContent = "You've got a blackjack!"
-            hasBlackjack = true
-            isAlive = false
-
-            renderGame()
-        } else {
-            messageEl.textContent = "You lost"
-            isAlive = false
-        }
-        cardsEl.textContent = cards[0] + " " + cards[1] + " " + cards[2]
-        cardsValueEl.textContent = "Result: " + sum
-    } else {
-        messageEl.textContent = "You can't draw another card!"
+        isAlive = false
+        renderGame()
     }
 }
 
