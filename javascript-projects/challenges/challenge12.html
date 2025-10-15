@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #12 - Array, Loop, DOM</title>
+</head>
+<body>
+    <p id="greeting"></p>
+    <button onclick="greet()">Greet</button>
+    <script>
+        let greetingsEl = document.querySelector("#greeting")
+        let greetings = [
+            "Hello,",
+            "my",
+            "name",
+            "is",
+            "Joseph",
+            "Emmanuel."
+        ]
+        function greet(){
+            for (let i = 0; i < greetings.length; i++) {
+                greetingsEl.textContent += greetings[i] + " "
+            }
+        }
+    </script>
+</body>
+</html>

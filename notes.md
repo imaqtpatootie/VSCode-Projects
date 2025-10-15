@@ -109,3 +109,13 @@ Javascript
         .length
         .push
         .pop
+    D-4 
+        for loop
+        return
+        ctrl + d = shortcuts
+        Math.random()
+        Math.floor()
+        logical operator
+        AND &&
+        OR ||
+        objects

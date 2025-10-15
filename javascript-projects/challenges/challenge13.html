@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #13 - Returning values in function</title>
+</head>
+<body>
+    <script>
+        let player1time = 52
+        let player2time = 48
+
+        function getFastest(){
+            if (player1time < player2time){
+                return player1time
+            } else if (player1time > player2time) {
+                return player2time
+            } else {
+                return player1time
+            }
+        }
+        let fastestRace = getFastest()
+        console.log(fastestRace)
+    </script>
+</body>
+</html>
