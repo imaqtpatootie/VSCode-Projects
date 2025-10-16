@@ -66,14 +66,11 @@
     left: 0;
     width: 0;
     height: .2rem;
-    background-color: #f0f0f0;
+    background-color: cyan;
     transition: width 0.3s ease-in;
 }
 .nav-bar .underline:hover::after {
     width: 100%;
-}
-.nav-bar li:target {
-    color: cyan;
 }
 #author-at {
     font-size: clamp(0.5rem, 2vw, 1.2rem);
