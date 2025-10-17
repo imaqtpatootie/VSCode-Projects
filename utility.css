@@ -1,12 +1,89 @@
-.italic {
-    font-style: italic;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.bold {
-    font-weight: 800;
+:root {
+    --dark-bg-primary: hsl(0, 0%, 10%); 
+    --dark-bg-secondary: hsl(0, 0%, 20%);  
+    --dark-bg-tertiary: hsl(0, 0%, 30%); 
+
+    --dark-text-primary: hsl(0, 0%, 90%); 
+    --dark-text-secondary: hsl(0, 0%, 80%);
+    --dark-text-tertiary: hsl(0, 0%, 70%);
+
+    --light-bg-primary: hsl(0, 0%, 90%); 
+    --light-bg-secondary: hsl(0, 0%, 80%);
+    --light-bg-tertiary: hsl(0, 0%, 70%);
+
+    --light-text-primary: hsl(0, 0%, 10%); 
+    --light-text-secondary: hsl(0, 0%, 20%);  
+    --light-text-tertiary: hsl(0, 0%, 30%); 
 }
-.no-underline {
-    text-decoration: none;
+
+/* background-colors */
+.bg-dark-primary {
+    background-color: var(--dark-bg-primary);
 }
-.white {
-    color: #f0f0f0;
+.bg-dark-secondary {
+    background-color: var(--dark-bg-secondary);
 }
+.bg-dark-tertiary {
+    background-color: var(--dark-bg-tertiary);
+}
+
+.bg-light-primary {
+    background-color: var(--light-bg-primary);
+}
+.bg-light-secondary {
+    background-color: var(--light-bg-secondary);
+}
+.bg-light-tertiary {
+    background-color: var(--light-bg-tertiary);
+}
+
+
+/* text-colors */
+.text-light-primary {
+    color: var(--light-text-primary);
+}
+.text-light-secondary {
+    color: var(--light-text-secondary);
+}
+.text-light-tertiary {
+    color: var(--light-text-tertiary);
+}
+
+.text-dark-primary {
+    color: var(--dark-text-primary);
+}
+.text-dark-secondary {
+    color: var(--dark-text-secondary);
+}
+.text-dark-tertiary {
+    color: var(--dark-text-tertiary);
+}
+
+.hidden {
+    display: none;
+}
+
+/* paddings */
+.p-0 { padding: 0rem; }
+.p-1 { padding: 0.125rem; }
+.p-2 { padding: 0.25rem; }
+.p-3 { padding: 0.5rem ;}
+.p-4 { padding: 0.75rem;}
+.p-5 { padding: 1rem;}
+.p-6 { padding: 1.25rem;}
+.p-7 { padding: 1.5rem;}
+
+
+.px-0 { padding-left: 0rem; padding-left: 0rem}
+.px-1 { padding-left: 0.125rem; padding-left: 0.125rem}
+.px-2 { padding-left: 0.25rem; padding-left: 0.25rem}
+.px-3 { padding-left: 0.5rem; padding-left: 0.5rem}
+.px-4 { padding-left: 0.75rem; padding-left: 0.75rem}
+.px-5 { padding-left: 1rem; padding-left: 1rem}
+.px-6 { padding-left: 1.25rem; padding-left: 1.25rem}
+.px-7 { padding-left: 1.5rem; padding-left: 1.5rem}
