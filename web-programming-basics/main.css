@@ -11,21 +11,12 @@
     font-style: "Poppins", sans-serif;
     font-weight: 400;
 }
-.container {
-    min-height: 100vh; 
-    width: 100vw;
-    /* background-color: #051014; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     border-radius: 2rem 2rem;
-    background-color: grey;
+    background-color: hsl(0, 0%, 90%);
     gap: 1rem;
     border: 0.5px solid black;
 }
@@ -37,30 +28,43 @@
     margin: auto;
 }
 .card-header img {
-    height: 100px;
+    height: 200px;
     width: inherit;
     border-radius:2rem 2rem 0 0;
     object-fit: cover;
 }
 .card-body {
-    padding: 1rem;
-    color: #f0f0f0;
-    font-size: 75%;
+    padding: 0 1rem;
+    /* font-size: 75%; */
     display: flex;
     flex-direction: column;
 }
-
+.card-body h2{
+    color: hsl(0, 0%, 10%);
+    font-weight: 800;
+    line-height: 2rem;
+}
+.card-body p {
+    display: flex;
+    justify-content: space-between;
+    coloR: hsl(0, 0%, 15%);
+}
 .card-footer {
     height: 50px;
+    padding: 0 1rem;
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: end;
 }
 .card-footer button {
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 10%);
     padding: 0.5rem 1rem;
     font-size: 75%;
     border-radius: 2rem;
-    border: none;
-    box-shadow: 0 0 5px black;
+    border: 0.1px solid black;
     cursor: pointer;
+}
+.card-footer button:hover {
+    background-color: hsl(0, 0%, 70%);
 }

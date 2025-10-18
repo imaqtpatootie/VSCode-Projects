@@ -1,0 +1,41 @@
+header {
+    position: sticky;
+    top: 10px;
+    width: 400px;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    border-radius: 4rem;
+}
+header > a {
+    color: var(--light-text-primary);
+    font-size: 90%;
+}
+.navbar-list {
+    display: flex;
+    list-style: none;
+}
+.navbar-list li {
+    display: flex;
+}
+.navbar-list li > a {
+    display: flex;
+    flex: 1 0 auto;
+    font-size: 75%;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: 400;
+    color: var(--light-text-primary);
+    border-radius: 2rem;
+}
+.navbar-list li > a:hover {
+    background-color: var(--light-bg-primary);
+}
+.navbar-list li>a:active {
+    transform: scale(1.1);
+    background-color: var(--light-bg-tertiary);
+}
