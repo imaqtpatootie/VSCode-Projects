@@ -203,7 +203,7 @@
 .no-underline { text-decoration: none; }
 
 .container {
-    min-height: 200vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: start;
