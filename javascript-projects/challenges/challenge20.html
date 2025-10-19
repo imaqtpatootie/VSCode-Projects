@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #20 - addEVentListener</title>
+</head>
+<body>
+    <h2>Animals fighter!!!</h2>
+    <div id="stage"></div>
+    <br>
+    <button id="btn">Pick fighters</button>
+
+    <script>
+        let fighter = [ "cat", "dog", "mouse", "kangaroo", "whale", "turtle", "dragon", "carp", "deer", "lion", "hyena"]
+
+        let stage = document.getElementById("stage")
+        let fightbtn = document.getElementById("btn")   
+
+        fightbtn.addEventListener("click", function(){
+           stage.textContent =  randomCharacter() + " vs " + randomCharacter()
+        });
+
+        function randomCharacter(){
+            let randomIndex = Math.floor(Math.random() * fighter.length)
+            return fighter[randomIndex]
+        }
+    </script>
+</body>
+</html>

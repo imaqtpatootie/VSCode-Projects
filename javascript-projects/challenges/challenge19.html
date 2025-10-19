@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #19 - Recap of blackjack</title>
+</head>
+<body>
+    
+    <script>
+        // object and methods
+        
+        let person = {
+            name: "Joseph Emmanuel N. Calvo",
+            age: 24,
+            country: "Philippines"
+        }
+        function logData(){
+            return person.name + " is " + person.age + " years old and lives in the " + person.country
+        }
+        console.log(logData())
+
+
+        // if else statements / coditional statements
+
+        let age = 24
+
+        if (age < 6) {
+            console.log("Free!")
+        } else if (age <= 17) {
+            console.log("Child discount")
+        } else if (age <= 26) {
+            console.log("Student discount")
+        } else if (age <= 66) {
+            console.log("Full price")
+        } else {
+            console.log("Senior Citizen discount")
+        }
+
+
+        // loops and array
+
+        let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+
+        for (let i = 0; i < largeCountries.length; i++) {
+            console.log(largeCountries[i])
+        }
+        
+
+        // push, pop, shift, and unshift
+        
+        let countries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+        countries.pop()
+        countries.push("Pakistan")
+        countries.shift()
+        countries.unshift("China")
+        console.log(countries)
+        
+
+        // AND logical operator 
+
+        let dayOfMonth = 13
+        let weekday = "friday"
+
+        if (dayOfMonth === 13 && weekday === "friday") {
+            console.log("Ooooh, it's " + weekday + " the " + dayOfMonth + "th")
+        }
+
+
+        // OR logical operator
+
+        let hands = ["rock", "paper", "scissors"]
+        function getHand() {
+            let randomIndex = Math.floor(Math.random() * 3)
+            return hands[randomIndex]
+        }
+        console.log(getHand())
+    </script>
+</body>
+</html>
