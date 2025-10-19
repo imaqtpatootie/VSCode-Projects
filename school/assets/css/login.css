@@ -1,76 +1,66 @@
-*:focus {
-    outline: none;
-}
-body {
-    font-family: var(--ff-1);
-    /* background-color: #051014;   */
+.container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    border-radius: 10%;
-    border: none;
-    position: relative;
-    gap: 1rem;
+    box-sizing: border-box;
 }
 h2 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    color: hsl(0, 0, 10%);
+    font-size: 2.5rem;
 }
-h2 > span {
-    color: #C73E1D;
+.username, .password {
+    width: 300px;
 }
-input {
-    padding: 1rem 2rem;
-    border-radius: 1000px;
-    border: 1px solid #C73E1D;
-    background-color: transparent;
-    margin-bottom: .5rem;
-    font-size: 1.1rem;
-}
-input:focus {
+
+#username, #password {
     outline: none;
-    border: 3px solid #C73E1D;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid var(--dark-bg-secondary);
+    border-radius: 2rem;
+    margin: 0.5rem 0;
 }
-button {
-    width: 98%;
-    margin: auto;
-    padding: 1rem 2rem;
-    border-radius: 1000px;
-    background-color: white;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    border: none;
-    position: relative;
+#username:focus, #password:focus{
+    border: 0.1rem solid var(--accent);
+    color: var(--accent);
+}
+.button {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#login {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 100px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--dark-bg-secondary);
+    background-color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 300ms ease;
 }
-button::after {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(60deg, #C73E1D, rgb(173, 190, 243));
-    border-radius: 1000px;
-    width: 102%;
-    height: 108%;
-    z-index: -1;
-    transition: z-index .5s, color .5s;
+#login:hover {
+    color: var(--accent);
+    border: 0.1rem solid var(--accent);
 }
-button:hover {
-    z-index: 0;
-    color: white;
+#login:active {
+    border: 0.1rem solid #057683;
+    color: #057683;
+}
+.container p {
+    text-align: right;
+    a {
+        text-decoration: none;
+        color: #057683;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }

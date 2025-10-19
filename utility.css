@@ -22,6 +22,8 @@
     --light-text-secondary: hsl(0, 0%, 20%);  
     --light-text-tertiary: hsl(0, 0%, 30%); 
 
+    --accent: #068D9D;
+
     --ff-1: "Poppins" , sans-serif;
 }
 
