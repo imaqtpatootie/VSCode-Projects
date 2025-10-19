@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #21 - Sorting</title>
+</head>
+<body>
+    <p id="apple"></p>
+    <p id="orange"></p>
+    <script>
+        let fruit = ["orange", "apple", "orange", "orange", "apple"]
+        let appleEl = document.getElementById("apple")
+        let orangeEl = document.getElementById("orange")
+
+        function sortFruit(){
+            for (let i = 0; i < fruit.length; i++) {
+                if (fruit[i] === "orange") {
+                    orangeEl.textContent += fruit[i] + " "
+                } else {
+                    appleEl.textContent += fruit[i] + " "
+                }
+            }
+        }
+        sortFruit()
+    </script>
+</body>
+</html>

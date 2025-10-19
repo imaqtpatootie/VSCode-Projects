@@ -1,0 +1,36 @@
+* {
+    font-family: var(--ff-1);
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+}
+button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+button:active {
+    opacity: 0.95;
+}
+.btn {
+    border: 1px solid black;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: hsl(0, 0%, 30%);
+}
