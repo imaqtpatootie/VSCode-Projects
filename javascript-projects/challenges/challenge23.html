@@ -6,11 +6,17 @@
     <title>Challenge #23 - .innerHTML</title>
 </head>
 <body>
-    <div class="container"></div>
+    <div id="container"></div>
     <script>
-        const containerEl = document.querySelector(".container")
-        containerEl.innerHTML = "<button> Help </button>"
-
+        const containerEl = document.getElementById("container")
+        containerEl.innerHTML = "<button onclick='buyBtn()'>Buy Me</button>"
+        function buyBtn(){
+            // containerEl.innerHTML += "<br><p>Thank you for buying</p>"
+            const p = document.createElement("p")
+            p.textContent = "Thank you for buying"
+            containerEl.append(p)
+        }
+        console.log("hi")
     </script>
 </body>
 </html>

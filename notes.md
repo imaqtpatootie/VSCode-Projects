@@ -102,13 +102,13 @@ Javascript
         elseIf
     D-3
         boolean
-        querySelector
-        array
+        querySelector()
+        array []
         zero index
         composite data type
         .length
-        .push
-        .pop
+        .push()
+        .pop()
     D-4 
         for loop
         return
@@ -123,3 +123,5 @@ Javascript
         const vs let
         addEventListener
         .innerHTML
+        .append()
+        .createElement()
