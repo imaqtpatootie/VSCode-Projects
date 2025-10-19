@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #22 - addEventListener</title>
+    <link rel="stylesheet" href="../../utility.css">
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 250px;
+            width: 250px;
+            border-radius: 0.2rem;
+            font-size: 2rem;
+            font-weight: 500;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+        }
+        div:hover {
+            background-color: black;
+            color: white;
+        }
+        div:active {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div id="helpBtn">Open Box</div>
+    <script>
+        let helpBtn = document.getElementById("helpBtn")
+
+        helpBtn.addEventListener("click", function(){
+            if (helpBtn.textContent === "Open Box") {
+                helpBtn.textContent = "Help me!"
+            } else {
+                helpBtn.textContent = "Open Box"
+            }
+        });
+    </script>
+</body>
+</html>

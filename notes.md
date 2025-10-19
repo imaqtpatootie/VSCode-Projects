@@ -119,3 +119,7 @@ Javascript
         AND &&
         OR ||
         objects
+    D-5
+        const vs let
+        addEventListener
+        .innerHTML
