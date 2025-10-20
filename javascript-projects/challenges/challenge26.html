@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #26 - JSON.stringify and JSON.parse</title>
+</head>
+<body>
+    <script>
+        let myLeads = `["Pornhub.com"]`
+        myLeads = JSON.parse(myLeads)
+        console.log(typeof myLeads)
+        myLeads.push("youjizz.com")
+        console.log(myLeads)
+        myLeads = JSON.stringify(myLeads)
+        console.log(myLeads)
+    </script>
+</body>
+</html>

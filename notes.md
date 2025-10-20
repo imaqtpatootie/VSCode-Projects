@@ -128,3 +128,8 @@ Javascript
     D-6 (10/20/2025)
         template strings ``
         String to Number = Number()
+        deploying chrome extension
+        .json javascript object notation
+        localStorage.setItem("", "")
+        localStorage.getItem("")
+        localStorage.clear()
