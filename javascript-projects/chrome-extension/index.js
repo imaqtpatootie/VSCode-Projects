@@ -18,12 +18,25 @@ inputBtn.addEventListener("click", function(){
 //         // const li = document.createElement("li")
 //         // li.textContent = myLeads[i]
 //         // unorderedEl.append()
-//         listItems += "<li>" + myLeads[i] + "</li>"
+//         // listItems += "<li>" + myLeads[i] + "</li>"
+//         listItems += `
+//             <li>
+//                 <a target="_blank" href="${myLeads[i]}">
+//                     ${myLeads[i]}
+//                 </a>
+//             </li>
+//         `
 //     }
 //     unorderedEl.innerHTML = listItems
 // }
 
 function renderLead(){
-    let listItem = "<li>" + "<a href=\"" + inputEl.value + "\">" + inputEl.value+ "</a>" + "</li>"
+    // let listItem = "<li><a href=\"" + inputEl.value + "\" target='_blank'>" + inputEl.value+ "</a> </li>"
+
+    let listItem = `
+        <li>
+            <a href="${inputEl.value}" target="_blank">${inputEl.value}</a>
+        </li>
+    `
     unorderedEl.innerHTML += listItem
 }

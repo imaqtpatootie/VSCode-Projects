@@ -5,45 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagay National High School - Senior High School</title>
     <link rel="icon" href="../imgs/my-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../utility.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <section id="hero">
-            <div class="darken">
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#achievements">Achievements</a></li>
-                        <li><a href="#alumni">Alumni</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                    <a href="./login.html" class="login">Login</a>
-                </nav>
-                <div class="hero-content">
-                    <h1 class="school-name">Sagay National High School</h1>
-                    <h4 class="address">National Highway, Barangay Poblacion II, Sagay City, Negros Occidental</h4>
-                    <div class="hero-buttons">
-                        <a href="#courses" class="btn-courses">Courses Offered</a>
-                        <a href=""></a>
-                    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#hero" title="Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="About us">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="M480-680q-33 0-56.5-23.5T400-760q0-33 23.5-56.5T480-840q33 0 56.5 23.5T560-760q0 33-23.5 56.5T480-680Zm-60 560v-480h120v480H420Z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Academics">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Community">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Admissions">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Events">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path
+                            d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm80 240v-80h400v80H280Zm0 160v-80h280v80H280Z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Contact">
+                    
+                </a>
+            </li>
+        </ul>
+        <a href="./login.html" title="Login" class="login">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                    d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+            </svg>
+        </a>
+    </nav>
+    
+    <section id="hero">
+        <div class="darken">
+            
+            <div class="hero-content">
+                <h1 class="school-name">Sagay National High School</h1>
+                <h4 class="address">National Highway, Barangay Poblacion II, Sagay City, Negros Occidental</h4>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn-courses">Enroll now</a>
+                    <a href=""></a>
                 </div>
             </div>
-        </section>
-        <section id="courses">
-            <div class="section">
-                <div class="section-image">Image</div>
-                <div class="section-contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eaque ut rerum temporibus non est natus dolores molestiae, quaerat at vitae maiores consequatur, praesentium repellendus, magnam deleniti enim beatae. Repellat!</div>
-            </div>
-        </section>
-        <section id="events"></section>
-        <section id="about"></section>
-        <section id="achievements"></section>
-        <section id="alumni"></section>
-        <section id="contacts"></section>
-    </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="section">
+            <div class="section-image">Image</div>
+            <div class="section-contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eaque ut rerum temporibus non est natus dolores molestiae, quaerat at vitae maiores consequatur, praesentium repellendus, magnam deleniti enim beatae. Repellat!</div>
+        </div>
+    </section>
+    <section id="events"></section>
+    <section id="about"></section>
+    <section id="achievements"></section>
+    <section id="alumni"></section>
+    <section id="contacts"></section>
 </body>
 </html>
+
+<!-- 
+    🏫 About
+
+    Mission
+    
+    Vision
+    
+    Core Values
+    
+    Mandate
+    
+    Faculty & Staff
+    
+    Alumni
+    
+    🎓 Academics
+    
+    Junior High School
+    
+    Senior High School
+    
+    Programs Offered (e.g. SPA, STEAM)
+    
+    🌍 Community
+    
+    Community Involvement / Projects
+    
+    Partnerships (if any)
+    
+    📝 Admissions
+    
+    How to Enroll
+    
+    🎉 Events
+    
+    School Events & Announcements
+    
+    📞 Contact
+    
+    Contact Form
+    
+    Location / Map
+    
+    Office Hours
+     -->

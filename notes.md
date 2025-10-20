@@ -125,3 +125,6 @@ Javascript
         .innerHTML
         .append()
         .createElement()
+    D-6 (10/20/2025)
+        template strings ``
+        String to Number = Number()
