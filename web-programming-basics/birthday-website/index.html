@@ -3,24 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🎉 Happy Birthday! 🎂</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Happy na, Birthday mo pa!</h1>
-        <img id="sista" src="imgs/ew.jpg" alt="law-ay2">
-        <h2 class="bday-age">27 years old</h2>
-        <h4 class="bday-date">01.03.1999</h4>
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+    
+    <!-- Main Container -->
+    <div class="main-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="birthday-badge">🎂 Birthday Special 🎂</div>
+            <h1 class="main-title">
+                <span class="title-line">Happy na,</span>
+                <span class="title-line highlight">Birthday mo pa!</span>
+            </h1>
+            
+            <div class="profile-container">
+                <div class="profile-ring"></div>
+                <img id="sista" src="imgs/ew.jpg" alt="Birthday celebrant" class="profile-img">
+                <div class="sparkle sparkle-1">✨</div>
+                <div class="sparkle sparkle-2">🎉</div>
+                <div class="sparkle sparkle-3">🎈</div>
+                <div class="sparkle sparkle-4">🎊</div>
+            </div>
+            
+            <div class="age-info">
+                <div class="age-card">
+                    <span class="age-number">27</span>
+                    <span class="age-label">Years Young</span>
+                </div>
+                <div class="date-card">
+                    <span class="date-icon">📅</span>
+                    <span class="date-text">01.03.1999</span>
+                </div>
+            </div>
+            
+            <button class="celebrate-btn" id="celebrateBtn">
+                🎉 Celebrate! 🎉
+            </button>
+        </section>
+
+        <!-- Gift Section -->
+        <section class="gift-section">
+            <h2 class="section-title">
+                <span class="title-icon">🎁</span>
+                Special Birthday Surprises
+                <span class="title-icon">🎁</span>
+            </h2>
+            
+            <!-- Gift 1 -->
+            <div class="gift-container">
+                <h3 class="gift-heading">Here's a message from the past you!</h3>
+                <p class="gift-hint">👆 Hover or tap the gift to reveal 👆</p>
+                <div class="gift-card">
+                    <div class="gift-box" id="gift-img">
+                        <div class="gift-ribbon"></div>
+                        <div class="gift-bow">🎀</div>
+                        <div class="gift-content">
+                            <span class="reveal-text">Hover me!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gift 2 -->
+            <div class="gift-container">
+                <h3 class="gift-heading">What people think when they see you!</h3>
+                <p class="gift-hint">👆 Another surprise awaits 👆</p>
+                <div class="gift-card">
+                    <div class="gift-box" id="gift-gif">
+                        <div class="gift-ribbon"></div>
+                        <div class="gift-bow">🎀</div>
+                        <div class="gift-content">
+                            <span class="reveal-text">Tap me!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gift 3 -->
+            <div class="gift-container">
+                <h3 class="gift-heading">Once again, Happy Birthday! 🎊</h3>
+                <p class="gift-hint">👆 One more surprise! 👆</p>
+                <div class="gift-card">
+                    <div class="gift-box" id="gift-message">
+                        <div class="gift-ribbon"></div>
+                        <div class="gift-bow">🎀</div>
+                        <div class="gift-content">
+                            <span class="reveal-text">Open me!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="birthday-footer">
+            <p class="footer-text">Made with 💖 for an amazing person</p>
+            <div class="balloon-container">
+                <span class="balloon">🎈</span>
+                <span class="balloon">🎈</span>
+                <span class="balloon">🎈</span>
+            </div>
+        </footer>
     </div>
-    <div class="gift-wrapper">
-        <h2 class="gift-title">Here's a message from the past you!</h2>
-        <h3 class="gift-hint">Hover over the gift!</h3>
-        <div class="gift-img" id="gift-img"></div>
-        <h2 class="gift-title">What people thinks when they see you!</h2>
-        <div class="gift-img" id="gift-gif"></div>
-        <h2 class="gift-title">Once again, </h2>
-        <div class="gift-img" id="gift-message"></div>
-    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

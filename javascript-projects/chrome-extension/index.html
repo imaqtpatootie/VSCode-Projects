@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="../../utility.css">
 </head>
 <body>
+    <h2>Save URLs</h2>
     <input type="text" id="input-el" autofocus>
-    <button id="input-btn">Save input</button>
-    <p>links: </p>
+    <div class="buttons">
+        <button id="input-btn" class="green">Save</button>
+        <button onclick="resetLeads();" class="red">Clear</button>
+    </div>
     <ul id="ul-el"></ul>
     <script src="./index.js"></script>
 </body>

@@ -44,8 +44,9 @@ section {
     justify-content: center;
     align-items: center;
 }
-.output p {
+.output input {
     font-size: 2rem;
+    height: 100%;
     text-align: right;
     width: 100%;
     line-height: 100%;

@@ -9,35 +9,35 @@
 <body>
     <div class="container">
         <section class="output">
-            <p id="output">0000000000000000000</p>
+            <input type="number" id="output" placeholder="0">
         </section>
         <div class="row1">
-            <button>C</button>
+            <button onclick="reset()">C</button>
             <button></button>
             <button>&LeftArrow;</button>
             <button>&divide;</button>
         </div>
         <div class="row2">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
+            <button onclick="saveNumber(7)">7</button>
+            <button onclick="saveNumber(8)">8</button>
+            <button onclick="saveNumber(9)">9</button>
             <button>&times;</button>
         </div>
         <div class="row3">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button onclick="saveNumber(4)">4</button>
+            <button onclick="saveNumber(5)">5</button>
+            <button onclick="saveNumber(6)">6</button>
             <button>&minus;</button>
         </div>
         <div class="row4">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button onclick="saveNumber(1)">1</button>
+            <button onclick="saveNumber(2)">2</button>
+            <button onclick="saveNumber(3)">3</button>
             <button>&plus;</button>
         </div>
         <div class="row5">
             <button></button>
-            <button>0</button>
+            <button onclick="saveNumber(0)">0</button>
             <button>.</button>
             <button id="equals">=</button>
         </div>

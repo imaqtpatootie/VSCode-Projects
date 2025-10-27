@@ -1,122 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Joseph Emmanuel N. Calvo</title>
-    <!-- <link rel="stylesheet" href="./main.css"> -->
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="image/x-icon" href="./imgs/my-icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Joseph Emmanuel N. Calvo - Front-end Web Developer Portfolio. Showcasing interactive web projects and development skills." />
+    <meta name="keywords" content="web developer, front-end developer, portfolio, JavaScript, HTML, CSS" />
+    <meta name="author" content="Joseph Emmanuel N. Calvo" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jo Calvo - Front-end Developer" />
+    <meta property="og:description" content="Aspiring front-end web developer passionate about creating interactive websites" />
+    <meta property="og:type" content="website" />
+    
+    <title>Jo Calvo - Front-end Developer Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/my-icon.png" />
 </head>
+
 <body>
-    <div class="container">
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="darken">
-                <nav class="nav-bar">
-                <!-- <ul class="sidebar">
-                        <li onclick=hideSidebar() class="close">
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#f0f0f0">
-                                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="./web-programming-basics/">Projects</a></li>
-                    </ul> -->
-                    <ul>
-                        <li><img src="./imgs/my-icon.png" alt="My Icon" class="hero-icon"><a href="https://github.com/imaqtpatootie" id="author-at">@imaqtpatootie</a></li>
-                        <li><a class="not-mobile-view underline" href="#hero">Home</a></li>
-                        <li><a class="not-mobile-view underline" href="#about">About</a></li>
-                        <li><a class="not-mobile-view underline" href="#portfolio">Portfolio</a></li>
-                        <li><a class="not-mobile-view underline" href="#contact">Contact</a></li>
-                        <!-- <li onclick=showSidebar()>
-                            <a href="#" class="menu">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
-                                    fill="#f0f0f0">
-                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                                </svg>
-                            </a>
-                        </li> -->
-                    </ul>
-                </nav>
-                <div class="hero-content">
-                    <h1 class="hero-title">Hi, I'm <span class="author-name">Jo</span>.</h1>
-                    <p class="hero-description">I'm an aspiring front-end web developer with a passion for creating interactive and functional websites.</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <img src="./imgs/my-icon.png" alt="Jo Calvo Logo" class="nav-logo" />
+                <span class="nav-brand-text">Jo Calvo</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="./files/Calvo_Resume.pdf" target="_blank" class="nav-link resume-btn">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in">
+                <p class="hero-greeting">Hi there, I'm</p>
+                <h1 class="hero-title">
+                    <span class="hero-name">Joseph Emmanuel</span>
+                    <span class="hero-subtitle">Front-end Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Crafting beautiful, interactive web experiences with passion and precision.
+                    Turning ideas into elegant digital solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-        </section>
-        <section id="about">
-            <h2 class="about-title">About</h2>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
             <div class="about-content">
-                <div class="how-i-started">
-                    <p>
-                        I'm <span class="bold">Joseph Emmanuel N. Calvo</span>, and this website serves as my portfolio. I also treat it
-                        as a record of my progress in web development. I relearned everything from scratch through YouTube. I discovered
-                        a 48-hour video titled <span class="italic">“How to Become a Full-Stack Developer from Scratch”</span> on the <a
-                            href="https://www.youtube.com/@freecodecamp" class="no-underline white bold" target="_blank">freeCodeCamp.org</a> YouTube
-                        channel, and it reignited my passion for learning.I'm deeply grateful to <a
-                            href="https://www.youtube.com/@Scrimba" class="no-underline bold white" target="_blank">Scrimba</a> and <a
-                            href="https://www.youtube.com/@freecodecamp" class="no-underline white bold" target="_blank">freeCodeCamp.org</a> for this
-                        opportunity.
+                <div class="about-image-wrapper">
+                    <div class="about-image-border"></div>
+                    <img src="./web-programming-basics/business-card/maymay.jpg" alt="Joseph Emmanuel N. Calvo" class="about-image" />
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-heading">My Journey into Web Development</h3>
+                    <p class="about-paragraph">
+                        I'm <strong>Joseph Emmanuel N. Calvo</strong>, an aspiring front-end developer with a passion 
+                        for creating interactive and functional websites. This portfolio serves as both a showcase 
+                        of my work and a record of my continuous growth in web development.
                     </p>
+                    <p class="about-paragraph">
+                        I relearned everything from scratch through self-directed learning on YouTube. 
+                        I discovered a comprehensive 48-hour course titled 
+                        <em>"How to Become a Full-Stack Developer from Scratch"</em> on 
+                        <a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener noreferrer" class="text-link">freeCodeCamp.org</a>, 
+                        which reignited my passion for web development.
+                    </p>
+                    <p class="about-paragraph">
+                        I've also been learning extensively from 
+                        <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank" rel="noopener noreferrer" class="text-link">SuperSimpleDev</a> 
+                        on YouTube, whose clear and practical tutorials have helped me understand complex concepts 
+                        in a simple, hands-on way. His teaching style has been instrumental in building my 
+                        confidence as a developer.
+                    </p>
+                    <p class="about-paragraph">
+                        I'm deeply grateful to 
+                        <a href="https://www.youtube.com/@Scrimba" target="_blank" rel="noopener noreferrer" class="text-link">Scrimba</a>, 
+                        <a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener noreferrer" class="text-link">freeCodeCamp.org</a>, 
+                        and 
+                        <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank" rel="noopener noreferrer" class="text-link">SuperSimpleDev</a> 
+                        for providing these incredible learning opportunities.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Hours of Learning</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Technologies Mastered</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="portfolio">
-            <h2 class="portfolio-title"><a href="./web-programming-basics/">My Projects</a></h2>
-            <div class="portfolio-card">
-                <div class="portfolio-card-text">
-                    <h4 class="breadcrumb">html.css / card</h4>
-                    <p class="description">My first html & css project
-                        <br><br>
-                        Projects done:
-                        <br>
-                        &nbsp;&middot;&nbsp;Business card
-                        <br>
-                        &nbsp;&middot;&nbsp;Space Exploration
-                        <br>
-                        &nbsp;&middot;&nbsp;BIrthday Website
-                    </p>
-                    <a href="https://github.com/imaqtpatootie/VSCode-Projects/tree/main/web-programming-basics" class="link-to-github" target="_blank">See all html/css projects on GitHub.</a>
-                </div>
-                <img src="./web-programming-basics/imgs/card.png" alt="Business card project">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I work with</span>
+                <h2 class="section-title">Skills & Technologies</h2>
             </div>
-            <div class="portfolio-blackjack-game">
-                <img src="./imgs/blackjack.png" alt="Blackjack Website image">
-                <div class="portfolio-blackjack-game-text">
-                    <h4 class="breadcrumb">js / blackjack game</h4>
-                    <p class="description">My first javascript project
-                        <br><br>
-                        Projects done:
-                        <br>
-                        &nbsp;&middot;&nbsp;Blackjack game
-                        <br>
-                        &nbsp;&middot;&nbsp;Basketball 
-                        <br>
-                        &nbsp;&middot;&nbsp;Calculator
-                    </p>
-                    <a href="https://github.com/imaqtpatootie/VSCode-Projects/tree/main/javascript-projects" class="link-to-github"
-                        target="_blank">See all js projects on GitHub.</a>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="html">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 19.5h20L12 2z"/>
+                            <path d="M12 8v8M8 14h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <p class="skill-description">Semantic markup and accessibility-focused structure</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="css">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M7 7h10M7 12h10M7 17h10"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <p class="skill-description">Modern layouts with Flexbox, Grid, and animations</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="javascript">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2"/>
+                            <path d="M7 8l5 5-5 5M13 8l5 5-5 5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <p class="skill-description">Interactive functionality and DOM manipulation</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="responsive">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2"/>
+                            <path d="M12 18h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Responsive Design</h3>
+                    <p class="skill-description">Mobile-first approach for all screen sizes</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 88%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="git">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12h8M12 8v8"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Git & GitHub</h3>
+                    <p class="skill-description">Version control and collaborative development</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="learning">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Continuous Learning</h3>
+                    <p class="skill-description">Always exploring new technologies and best practices</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--skill-width: 95%"></div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="contact">
-            <h2 class="contact-title">Contact me</h2>
-        </section>
-    </div>
-    <!-- <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none';
-        }
-    </script> -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I've built</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Blackjack Game -->
+                <article class="project-card featured">
+                    <div class="project-image-wrapper">
+                        <img src="./imgs/blackjack.png" alt="Blackjack Game Project" class="project-image" />
+                        <div class="project-overlay">
+                            <a href="./javascript-projects/blackjack-game/" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">JavaScript / Game Development</span>
+                        <h3 class="project-title">Blackjack Game</h3>
+                        <p class="project-description">
+                            An interactive card game built with vanilla JavaScript. Features game logic, 
+                            random card dealing, score tracking, and win/lose conditions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Game Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./javascript-projects/blackjack-game/" target="_blank" class="project-btn">
+                                <span>Live Demo</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/imaqtpatootie/VSCode-Projects/tree/main/javascript-projects/blackjack-game" target="_blank" class="project-btn secondary">
+                                <span>GitHub</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Calculator -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="2" width="16" height="20" rx="2"/>
+                                <line x1="8" y1="6" x2="16" y2="6"/>
+                                <line x1="8" y1="10" x2="16" y2="10"/>
+                                <line x1="8" y1="14" x2="16" y2="14"/>
+                                <line x1="8" y1="18" x2="16" y2="18"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="./javascript-projects/calculator/" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">JavaScript / Utility</span>
+                        <h3 class="project-title">Calculator App</h3>
+                        <p class="project-description">
+                            A functional calculator with basic arithmetic operations. Clean UI and responsive design.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS Grid</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Chrome Extension -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="./javascript-projects/chrome-extension/" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">JavaScript / Browser Extension</span>
+                        <h3 class="project-title">Chrome Extension</h3>
+                        <p class="project-description">
+                            A custom Chrome extension demonstrating browser API integration and local storage.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Chrome API</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Password Generator -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="./javascript-projects/password-generator/" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">JavaScript / Security</span>
+                        <h3 class="project-title">Password Generator</h3>
+                        <p class="project-description">
+                            Generate secure random passwords with customizable length and character types.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Security</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Business Card -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./web-programming-basics/imgs/card.png" alt="Business Card Project" class="project-image" />
+                        <div class="project-overlay">
+                            <a href="./web-programming-basics/business-card/" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">HTML / CSS</span>
+                        <h3 class="project-title">Digital Business Card</h3>
+                        <p class="project-description">
+                            My first HTML & CSS project - a responsive digital business card with modern design.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Birthday Website -->
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="./web-programming-basics/birthday-website/" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">HTML / CSS</span>
+                        <h3 class="project-title">Birthday Website</h3>
+                        <p class="project-description">
+                            A fun, animated birthday greeting website with GIFs and interactive elements.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Animations</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/imaqtpatootie/VSCode-Projects" target="_blank" class="btn btn-outline">
+                    View All Projects on GitHub
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's work together</h3>
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities and would love to hear from you. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">your.email@example.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/imaqtpatootie" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">@imaqtpatootie</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">Connect with me</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2025 Joseph Emmanuel N. Calvo. Built with passion and dedication.
+                </p>
+                <div class="footer-links">
+                    <a href="#hero" class="footer-link">Back to Top</a>
+                    <span class="footer-divider">|</span>
+                    <a href="https://github.com/imaqtpatootie" target="_blank" class="footer-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
