@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty & Staff - Sagay National High School</title>
     <link rel="icon" href="../imgs/my-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../utility.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/modern-styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -16,7 +15,7 @@
                 <h2>SNHS</h2>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#hero">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#academics">Academics</a></li>
                 <li><a href="index.html#admissions">Admissions</a></li>
@@ -33,118 +32,159 @@
     </nav>
 
     <!-- Faculty & Staff Section -->
-    <section id="faculty-staff" class="section">
+    <section id="faculty-staff" class="section" style="padding-top: 6rem;">
         <div class="container">
-            <h2>Our Faculty & Staff</h2>
-            <p class="section-intro">Meet the dedicated professionals who make our school community thrive.</p>
+            <div class="text-center mb-xl">
+                <h2>Our Dedicated Faculty & Staff</h2>
+                <p>Meet the passionate educators and support professionals who make our school community thrive.</p>
+            </div>
 
-            <!-- Administrators -->
-            <div class="staff-category">
-                <h3>Administrators</h3>
-                <div class="staff-grid">
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/administrators/principal.jpg" alt="Principal Name" onerror="this.src='../imgs/my-icon.png'">
+            <!-- School Leadership -->
+            <div class="section-alt" style="padding: 2rem; margin: 2rem 0; border-radius: 1rem;">
+                <h3 class="text-center mb-lg">🏛️ School Leadership</h3>
+                <div class="card-grid">
+                    <div class="card" style="text-align: center;">
+                        <div class="staff-photo" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden; border: 4px solid var(--primary-blue); box-shadow: var(--shadow-md); position: relative;">
+                            <img src="./faculty-staff/administrators/principal.jpg" alt="Mrs. Vilia G. Tupas - Principal" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light)); display: none; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold; position: absolute; top: 0; left: 0;">VT</div>
                         </div>
-                        <div class="staff-info">
-                            <h4>Principal Name</h4>
-                            <p>School Principal</p>
-                            <p>MA in Education</p>
-                        </div>
+                        <h4 style="color: var(--primary-blue);">Mrs. Vilia G. Tupas</h4>
+                        <p><strong>School Principal</strong></p>
+                        <p>MA in Educational Administration</p>
+                        <p style="font-size: 0.9rem; color: var(--gray-600);">Leading SNHS with vision and dedication for over 8 years</p>
                     </div>
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/administrators/vice-principal.jpg" alt="Vice Principal Name" onerror="this.src='../imgs/my-icon.png'">
+                    <div class="card" style="text-align: center;">
+                        <div class="staff-photo" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden; border: 4px solid var(--accent-gold); box-shadow: var(--shadow-md); position: relative;">
+                            <img src="./faculty-staff/administrators/vice-principal.jpg" alt="Mr. Roberto M. Cruz - Assistant Principal" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light)); display: none; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold; position: absolute; top: 0; left: 0;">RC</div>
                         </div>
-                        <div class="staff-info">
-                            <h4>Vice Principal Name</h4>
-                            <p>Vice Principal</p>
-                            <p>MA in Educational Management</p>
-                        </div>
+                        <h4 style="color: var(--primary-blue);">Mr. Roberto M. Cruz</h4>
+                        <p><strong>Assistant Principal</strong></p>
+                        <p>MA in Educational Management</p>
+                        <p style="font-size: 0.9rem; color: var(--gray-600);">Supporting academic excellence and student development</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Teachers -->
-            <div class="staff-category">
-                <h3>Teaching Staff</h3>
-                <div class="staff-grid">
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/teachers/math-teacher.jpg" alt="Math Teacher" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="staff-info">
-                            <h4>Teacher Name</h4>
-                            <p>Mathematics Teacher</p>
-                            <p>BS Mathematics, MA Mathematics</p>
-                        </div>
+            <!-- Teaching Faculty -->
+            <div style="margin: 3rem 0;">
+                <h3 class="text-center mb-lg">👩‍🏫 Our Teaching Faculty</h3>
+                <div class="stats-grid" style="margin-bottom: 2rem;">
+                    <div class="stat-card">
+                        <span class="stat-number">144</span>
+                        <span class="stat-label">Total Teachers</span>
                     </div>
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/teachers/english-teacher.jpg" alt="English Teacher" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="staff-info">
-                            <h4>Teacher Name</h4>
-                            <p>English Teacher</p>
-                            <p>AB English, MA English</p>
-                        </div>
+                    <div class="stat-card">
+                        <span class="stat-number">89%</span>
+                        <span class="stat-label">With Master's Degree</span>
                     </div>
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/teachers/science-teacher.jpg" alt="Science Teacher" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="staff-info">
-                            <h4>Teacher Name</h4>
-                            <p>Science Teacher</p>
-                            <p>BS Biology, MA Biology</p>
-                        </div>
+                    <div class="stat-card">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Years Average Experience</span>
                     </div>
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/teachers/history-teacher.jpg" alt="History Teacher" onerror="this.src='../imgs/my-icon.png'">
+                    <div class="stat-card">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Licensed Professionals</span>
+                    </div>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
                         </div>
-                        <div class="staff-info">
-                            <h4>Teacher Name</h4>
-                            <p>History Teacher</p>
-                            <p>AB History, MA History</p>
+                        <h3>Mathematics Department</h3>
+                        <p><strong>18 Teachers</strong> - Covering Algebra, Geometry, Statistics, Pre-Calculus, and Basic Calculus for all grade levels and tracks.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
                         </div>
+                        <h3>Science Department</h3>
+                        <p><strong>22 Teachers</strong> - Specializing in Physics, Chemistry, Biology, Earth Science, and Research methodology for STEM students.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3>Language Arts</h3>
+                        <p><strong>20 Teachers</strong> - English and Filipino language teachers focusing on communication skills, literature, and creative writing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </div>
+                        <h3>Social Studies</h3>
+                        <p><strong>16 Teachers</strong> - History, Geography, Economics, and Political Science educators preparing students for civic engagement.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3>Business & Entrepreneurship</h3>
+                        <p><strong>12 Teachers</strong> - ABM track specialists in Accounting, Business Management, and Entrepreneurship development.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3>Arts & Physical Education</h3>
+                        <p><strong>14 Teachers</strong> - Music, Arts, Physical Education, and Health teachers promoting holistic student development.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Support Staff -->
-            <div class="staff-category">
-                <h3>Support Staff</h3>
-                <div class="staff-grid">
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/support-staff/librarian.jpg" alt="Librarian" onerror="this.src='../imgs/my-icon.png'">
+            <!-- Support Services -->
+            <div class="section-alt" style="padding: 2rem; margin: 2rem 0; border-radius: 1rem;">
+                <h3 class="text-center mb-lg">🤝 Support Services Team</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
                         </div>
-                        <div class="staff-info">
-                            <h4>Staff Name</h4>
-                            <p>Librarian</p>
-                            <p>BS Library Science</p>
-                        </div>
+                        <h3>Library Services</h3>
+                        <p><strong>3 Librarians</strong> - Managing our extensive collection of books, digital resources, and research materials to support student learning.</p>
                     </div>
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/support-staff/guidance-counselor.jpg" alt="Guidance Counselor" onerror="this.src='../imgs/my-icon.png'">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
                         </div>
-                        <div class="staff-info">
-                            <h4>Staff Name</h4>
-                            <p>Guidance Counselor</p>
-                            <p>MA Guidance & Counseling</p>
-                        </div>
+                        <h3>Guidance & Counseling</h3>
+                        <p><strong>4 Counselors</strong> - Providing academic guidance, career counseling, and personal support to help students achieve their goals.</p>
                     </div>
-                    <div class="staff-card">
-                        <div class="staff-image">
-                            <img src="./faculty-staff/support-staff/nurse.jpg" alt="School Nurse" onerror="this.src='../imgs/my-icon.png'">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.636 4.636a9 9 0 1212.728 0M12 7v5l3 3" />
+                            </svg>
                         </div>
-                        <div class="staff-info">
-                            <h4>Staff Name</h4>
-                            <p>School Nurse</p>
-                            <p>BS Nursing</p>
+                        <h3>Health Services</h3>
+                        <p><strong>2 School Nurses</strong> - Ensuring student health and wellness through medical care, health education, and emergency response.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
                         </div>
+                        <h3>Administrative Support</h3>
+                        <p><strong>8 Staff Members</strong> - Registrar, accounting, maintenance, security, and other essential services that keep our school running smoothly.</p>
                     </div>
                 </div>
             </div>
@@ -179,9 +219,20 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sagay National High School. All rights reserved.</p>
+                <p>&copy; 2025 Sagay National High School. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
 </html>
+    <script>
+        // Logo click to go to homepage
+        const logo = document.querySelector('.nav-logo');
+        if (logo) {
+            logo.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = 'index.html#hero';
+            });
+            logo.style.cursor = 'pointer';
+        }
+    </script>

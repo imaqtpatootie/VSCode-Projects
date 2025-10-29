@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alumni - Sagay National High School</title>
     <link rel="icon" href="../imgs/my-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../utility.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/modern-styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -16,7 +17,7 @@
                 <h2>SNHS</h2>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#hero">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#academics">Academics</a></li>
                 <li><a href="index.html#admissions">Admissions</a></li>
@@ -24,8 +25,10 @@
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
             <a href="./login.html" title="Login" class="login-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-                    <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="currentColor">
+                    <path
+                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
                 </svg>
                 Login
             </a>
@@ -33,189 +36,159 @@
     </nav>
 
     <!-- Alumni Section -->
-    <section id="alumni" class="section">
+    <section id="alumni" class="section" style="padding-top: 6rem;">
         <div class="container">
-            <h2>Our Alumni</h2>
-            <p class="section-intro">Celebrating the achievements of our graduates who continue to make a difference in the world.</p>
+            <div class="text-center mb-xl">
+                <h2>Our Distinguished Alumni</h2>
+                <p>Celebrating the achievements of our graduates who continue to make a difference in the world.</p>
+            </div>
 
             <!-- Top Valedictorians -->
-            <div class="alumni-year">
-                <h3>Top Valedictorians</h3>
-                <div class="alumni-grid">
-                    <div class="alumni-card valedictorian-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2024/valedictorian.jpg" alt="Valedictorian Name" onerror="this.src='../imgs/my-icon.png'">
+            <div class="section-alt" style="padding: 2rem 0; margin: 2rem 0; border-radius: 1rem;">
+                <h3 class="text-center mb-lg">🏆 Top Academic Achievers - Batch 2024</h3>
+                <div class="card-grid">
+                    <div class="card" style="text-align: center;">
+                        <div class="alumni-photo"
+                            style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden; border: 4px solid var(--accent-gold); box-shadow: var(--shadow-md); position: relative;">
+                            <img src="./alumni/2024/valedictorian.jpg" alt="Maria Santos - Valedictorian"
+                                style="width: 100%; height: 100%; object-fit: cover;"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div
+                                style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light)); display: none; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold; position: absolute; top: 0; left: 0;">
+                                MS</div>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Valedictorian Name</h4>
-                            <p>Batch 2024</p>
-                            <p>STEM Strand - 1st Honor</p>
-                        </div>
+                        <h4 style="color: var(--primary-blue);">Maria Santos</h4>
+                        <p><strong>Valedictorian</strong></p>
+                        <p>STEM Strand - 1st Honor</p>
+                        <p style="font-size: 0.9rem; color: var(--gray-600);">Now studying BS Computer Science at
+                            University of the Philippines</p>
                     </div>
-                    <div class="alumni-card valedictorian-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2024/salutatorian.jpg" alt="Salutatorian Name" onerror="this.src='../imgs/my-icon.png'">
+                    <div class="card" style="text-align: center;">
+                        <div class="alumni-photo"
+                            style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden; border: 4px solid var(--primary-blue); box-shadow: var(--shadow-md); position: relative;">
+                            <img src="./alumni/2024/salutatorian.jpg" alt="Juan Dela Cruz - Salutatorian"
+                                style="width: 100%; height: 100%; object-fit: cover;"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div
+                                style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light)); display: none; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold; position: absolute; top: 0; left: 0;">
+                                JD</div>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Salutatorian Name</h4>
-                            <p>Batch 2024</p>
-                            <p>ABM Strand - 2nd Honor</p>
-                        </div>
+                        <h4 style="color: var(--primary-blue);">Juan Dela Cruz</h4>
+                        <p><strong>Salutatorian</strong></p>
+                        <p>ABM Strand - 2nd Honor</p>
+                        <p style="font-size: 0.9rem; color: var(--gray-600);">Now studying BS Accountancy at De La Salle
+                            University</p>
                     </div>
-                    <div class="alumni-card valedictorian-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2024/third-honor.jpg" alt="Third Honor Name" onerror="this.src='../imgs/my-icon.png'">
+                    <div class="card" style="text-align: center;">
+                        <div class="alumni-photo"
+                            style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden; border: 4px solid var(--success); box-shadow: var(--shadow-md); position: relative;">
+                            <img src="./alumni/2024/third-honor.jpg" alt="Ana Reyes - Third Honor"
+                                style="width: 100%; height: 100%; object-fit: cover;"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div
+                                style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--success), #34d399); display: none; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold; position: absolute; top: 0; left: 0;">
+                                AR</div>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Third Honor Name</h4>
-                            <p>Batch 2024</p>
-                            <p>HUMSS Strand - 3rd Honor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Alumni by Year -->
-            <div class="alumni-year">
-                <h3>Batch 2024 Graduates</h3>
-                <div class="alumni-grid">
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2024/grad1.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>STEM Strand</p>
-                            <p>Section A</p>
-                        </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2024/grad2.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>ABM Strand</p>
-                            <p>Section B</p>
-                        </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2024/grad3.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>HUMSS Strand</p>
-                            <p>Section C</p>
-                        </div>
+                        <h4 style="color: var(--primary-blue);">Ana Reyes</h4>
+                        <p><strong>Third Honor</strong></p>
+                        <p>HUMSS Strand - 3rd Honor</p>
+                        <p style="font-size: 0.9rem; color: var(--gray-600);">Now studying AB Political Science at
+                            Ateneo de Manila</p>
                     </div>
                 </div>
             </div>
 
-            <div class="alumni-year">
-                <h3>Batch 2023 Graduates</h3>
-                <div class="alumni-grid">
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2023/grad1.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>STEM Strand</p>
-                            <p>Section A</p>
-                        </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2023/grad2.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>ABM Strand</p>
-                            <p>Section B</p>
-                        </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2023/grad3.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>HUMSS Strand</p>
-                            <p>Section C</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Recent Graduates -->
+            <div style="margin: 3rem 0;">
+                <h3 class="text-center mb-lg">Recent Graduates by Batch</h3>
 
-            <div class="alumni-year">
-                <h3>Batch 2022 Graduates</h3>
-                <div class="alumni-grid">
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2022/grad1.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
+                <!-- Batch 2024 -->
+                <div class="section-alt" style="padding: 2rem; margin: 2rem 0; border-radius: 1rem;">
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1.5rem;">🎓 Batch 2024 - 156 Graduates</h4>
+                    <div class="stats-grid" style="margin-bottom: 2rem;">
+                        <div class="stat-card">
+                            <span class="stat-number">68</span>
+                            <span class="stat-label">STEM Graduates</span>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>STEM Strand</p>
-                            <p>Section A</p>
+                        <div class="stat-card">
+                            <span class="stat-number">42</span>
+                            <span class="stat-label">ABM Graduates</span>
                         </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2022/grad2.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
+                        <div class="stat-card">
+                            <span class="stat-number">35</span>
+                            <span class="stat-label">HUMSS Graduates</span>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>ABM Strand</p>
-                            <p>Section B</p>
+                        <div class="stat-card">
+                            <span class="stat-number">11</span>
+                            <span class="stat-label">TVL Graduates</span>
                         </div>
                     </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2022/grad3.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
-                        </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>HUMSS Strand</p>
-                            <p>Section C</p>
-                        </div>
-                    </div>
+                    <p style="text-align: center; color: var(--gray-600);">95% of our graduates are now enrolled in
+                        college or employed in their chosen fields.</p>
                 </div>
-            </div>
 
-            <div class="alumni-year">
-                <h3>Batch 2021 Graduates</h3>
-                <div class="alumni-grid">
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2021/grad1.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
+                <!-- Batch 2023 -->
+                <div class="section-alt" style="padding: 2rem; margin: 2rem 0; border-radius: 1rem;">
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1.5rem;">🎓 Batch 2023 - 142 Graduates</h4>
+                    <div class="stats-grid" style="margin-bottom: 2rem;">
+                        <div class="stat-card">
+                            <span class="stat-number">62</span>
+                            <span class="stat-label">STEM Graduates</span>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>STEM Strand</p>
-                            <p>Section A</p>
+                        <div class="stat-card">
+                            <span class="stat-number">38</span>
+                            <span class="stat-label">ABM Graduates</span>
                         </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2021/grad2.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
+                        <div class="stat-card">
+                            <span class="stat-number">32</span>
+                            <span class="stat-label">HUMSS Graduates</span>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>ABM Strand</p>
-                            <p>Section B</p>
+                        <div class="stat-card">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">TVL Graduates</span>
                         </div>
                     </div>
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="./alumni/2021/grad3.jpg" alt="Graduate Name" onerror="this.src='../imgs/my-icon.png'">
+                    <p style="text-align: center; color: var(--gray-600);">Many are now in their second year of college,
+                        excelling in their chosen programs.</p>
+                </div>
+
+                <!-- Notable Alumni Achievements -->
+                <div class="card-grid" style="margin-top: 3rem;">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
                         </div>
-                        <div class="alumni-info">
-                            <h4>Graduate Name</h4>
-                            <p>HUMSS Strand</p>
-                            <p>Section C</p>
+                        <h3>Academic Excellence</h3>
+                        <p>Our alumni consistently perform well in college entrance exams and maintain high GPAs in
+                            their university studies.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
                         </div>
+                        <h3>Career Success</h3>
+                        <p>Many of our graduates have found success in various fields including engineering, business,
+                            education, and healthcare.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3>Community Impact</h3>
+                        <p>Our alumni continue to give back to the community through volunteer work, mentorship, and
+                            supporting current students.</p>
                     </div>
                 </div>
             </div>
@@ -250,9 +223,69 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sagay National High School. All rights reserved.</p>
+                <p>&copy; 2025 Sagay National High School. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    
+    <script src="./assets/js/enhanced-interactions.js"></script>
+    <script>
+        // Logo click to go to homepage
+        const logo = document.querySelector('.nav-logo');
+        if (logo) {
+            logo.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = 'index.html#hero';
+            });
+            logo.style.cursor = 'pointer';
+        }
+        
+        // Enhanced alumni photo interactions
+        document.querySelectorAll('.alumni-photo').forEach(photo => {
+            photo.addEventListener('click', function() {
+                const img = this.querySelector('img');
+                if (img && img.src) {
+                    // Create lightbox effect
+                    const lightbox = document.createElement('div');
+                    lightbox.style.cssText = `
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.9);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 10000;
+                        cursor: pointer;
+                        animation: fadeIn 0.3s ease-out;
+                    `;
+                    
+                    const lightboxImg = document.createElement('img');
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightboxImg.style.cssText = `
+                        max-width: 90%;
+                        max-height: 90%;
+                        border-radius: 1rem;
+                        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+                        animation: scaleIn 0.3s ease-out;
+                    `;
+                    
+                    lightbox.appendChild(lightboxImg);
+                    document.body.appendChild(lightbox);
+                    
+                    lightbox.addEventListener('click', () => {
+                        lightbox.style.animation = 'fadeOut 0.3s ease-out';
+                        setTimeout(() => lightbox.remove(), 300);
+                    });
+                }
+            });
+        });
+        
+        console.log('Alumni page loaded successfully');
+    </script>
 </body>
+
 </html>

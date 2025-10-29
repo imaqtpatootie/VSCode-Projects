@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagay National High School - Senior High School</title>
+    <title>Sagay National High School - Excellence in Education</title>
     <link rel="icon" href="../imgs/my-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../utility.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/modern-styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -16,6 +21,7 @@
                 <h2>SNHS</h2>
             </div>
             <ul class="nav-menu">
+                <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#academics">Academics</a></li>
                 <li><a href="#admissions">Admissions</a></li>
@@ -23,8 +29,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="./login.html" title="Login" class="login-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-                    <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="currentColor">
+                    <path
+                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
                 </svg>
                 Login
             </a>
@@ -32,168 +40,583 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-overlay">
+    <section id="hero" class="hero">
+        <div class="container">
             <div class="hero-content">
-                <h1>Welcome to Sagay National High School</h1>
-                <p>Excellence in Education, Building Tomorrow's Leaders</p>
+                <h1>Sagay National High School</h1>
+                <p>Nurturing Excellence, Building Character, Shaping Future Leaders</p>
                 <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#admissions" class="btn btn-secondary">Enroll Now</a>
+                    <a href="#about" class="btn btn-primary">Discover Our Story</a>
+                    <a href="#admissions" class="btn btn-secondary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">5,022</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">144</span>
+                    <span class="stat-label">Teachers</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">75+</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">800k</span>
+                    <span class="stat-label">Sq. Meters Campus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="section">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Our Rich History</h2>
+                <p>From humble beginnings to educational excellence - the story of SNHS</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3>1948 - The Beginning</h3>
+                    <p>The dream of having a secondary school in Sagay City after World War II was realized during the
+                        term of the late Mayor Jose B. Puey, Sr. and Vice Mayor Amalio R. Cueva, Sr. The first secondary
+                        school was formally opened in school year 1948-1949.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3>Growth & Development</h3>
+                    <p>From its humble beginning with 218 enrollees, SNHS has grown tremendously. Today, our 800,000
+                        square-meter campus houses 144 dedicated teachers and 5,022 students, making us one of the
+                        largest schools in the region.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3>Leadership Legacy</h3>
+                    <p>SNHS pays gratitude to the ten principals who have served with dedication. Under the current
+                        leadership of Mrs. Vilia G. Tupas, the school continues to thrive and maintain its commitment to
+                        educational excellence.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section section-alt">
         <div class="container">
-            <h2>About Our School</h2>
-            <div class="about-grid">
-                <div class="about-card">
+            <div class="text-center mb-xl">
+                <h2>About Sagay National High School</h2>
+                <p>A student-friendly school with conducive learning environment, modern facilities and strong
+                    stakeholders' partnership.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
                     <h3>Our Mission</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>To provide quality, relevant, and accessible education that develops competent, productive, and
+                        morally upright citizens who can contribute to national development and global competitiveness.
+                    </p>
                 </div>
-                <div class="about-card">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </div>
                     <h3>Our Vision</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>A student-friendly school with conducive learning environment, modern facilities and strong
+                        stakeholders' partnership where students are imbued with integrity and industry.</p>
                 </div>
-                <div class="about-card">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
                     <h3>Core Values</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p><strong>I.N.T.E.G.R.I.T.Y.</strong> - Innovation, Nationalism, Teamwork, Excellence, Growth,
+                        Respect, Integrity, Trust, and Youth empowerment guide our educational philosophy.</p>
                 </div>
-                <div class="about-card">
-                    <h3>Our Mandate</h3>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Committed to providing basic, quality and relevant curricula through formal and alternative modes
+                        of delivery responsive to learners' needs.</p>
                 </div>
-                <div class="about-card">
-                    <div class="card-image">
-                        <img src="./faculty-staff/administrators/principal.jpg" alt="School Principal" onerror="this.src='../imgs/my-icon.png'">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
                     </div>
                     <h3>Faculty & Staff</h3>
-                    <p>Meet our dedicated educators and support staff who guide our students towards excellence.</p>
-                    <a href="faculty-staff.html" class="card-link">View All Faculty & Staff</a>
+                    <p>Our dedicated team of 144 teachers and support staff are committed to nurturing every student's
+                        potential and guiding them towards success.</p>
+                    <a href="faculty-staff.html" class="btn btn-primary"
+                        style="margin-top: 1rem; display: inline-flex;">Meet Our Team</a>
                 </div>
-                <div class="about-card">
-                    <div class="card-image">
-                        <img src="./alumni/2024/valedictorian.jpg" alt="Top Valedictorians" onerror="this.src='../imgs/my-icon.png'">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
                     </div>
-                    <h3>Alumni</h3>
-                    <p>Featuring our top valedictorians who exemplify academic excellence and leadership.</p>
-                    <a href="alumni.html" class="card-link">View All Alumni</a>
+                    <h3>Alumni Network</h3>
+                    <p>Our proud alumni continue to make their mark in various fields, representing the excellence and
+                        values instilled at SNHS.</p>
+                    <a href="alumni.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-flex;">View
+                        Alumni</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Academics Section -->
-    <section id="academics" class="section section-alt">
+    <section id="academics" class="section">
         <div class="container">
-            <h2>Academic Programs</h2>
-            <div class="academics-grid">
-                <div class="academic-card">
-                    <h3>Junior High School</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <ul>
-                        <li>Grades 7-10</li>
-                        <li>Comprehensive curriculum</li>
-                        <li>Extracurricular activities</li>
-                    </ul>
-                </div>
-                <div class="academic-card">
-                    <h3>Senior High School</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <ul>
-                        <li>Grades 11-12</li>
-                        <li>STEM, ABM, HUMSS, TVL tracks</li>
-                        <li>Career guidance</li>
-                    </ul>
+            <div class="text-center mb-xl">
+                <h2>Academic Programs</h2>
+                <p>Comprehensive education programs designed to prepare students for higher education and future
+                    careers.</p>
+            </div>
+
+            <!-- Junior High School Programs -->
+            <div style="margin-bottom: 3rem;">
+                <h3 class="text-center mb-lg">🎓 Junior High School Programs (Grades 7-10)</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3>Regular Class</h3>
+                        <p>Comprehensive curriculum covering core subjects with various programs to develop students'
+                            interests and abilities.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Core subjects: Math, Science, English, Filipino</li>
+                            <li>Social Studies and Values Education</li>
+                            <li>Technology and Livelihood Education</li>
+                            <li>Physical Education and Health</li>
+                            <li>Arts and Music programs</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3>SPED (Special Education)</h3>
+                        <p>Specialized program for gifted, talented, and differently-abled students with modified
+                            curricula and facilities.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Modified school curricula and programs</li>
+                            <li>Special services and physical facilities</li>
+                            <li>Individualized learning approaches</li>
+                            <li>Inclusive education environment</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3>STEM Program</h3>
+                        <p>Unified academic program focusing on Science, Technology, Engineering, and Mathematics with
+                            ICT and Research.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Interdisciplinary STEM approach</li>
+                            <li>ICT and Research subjects</li>
+                            <li>Real-world applications</li>
+                            <li>Cohesive learning paradigm</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 4V2a1 1 0 011-1h4a1 1 0 011 1v2m-6 0h8m-8 0a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V6a2 2 0 00-2-2m-8 0V4a1 1 0 011-1h4a1 1 0 011 1v2M9 12l2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3>SPA (Special Program in the Arts)</h3>
+                        <p>Explores students' artistic inclinations in media arts, visual arts, theatre, dance, and
+                            music.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Media and Visual Arts</li>
+                            <li>Theatre Arts and Dance</li>
+                            <li>Music and Performance</li>
+                            <li>Heritage appreciation and artistic excellence</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <h3>STVEP (Technical-Vocational)</h3>
+                        <p>Strengthened Technical-Vocational Education Program preparing graduates for work and
+                            entrepreneurship.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Work-ready graduates</li>
+                            <li>Entrepreneurship development</li>
+                            <li>Sustainable development focus</li>
+                            <li>Globally recognized program</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4m-6 0h6m-6 0a2 2 0 00-2 2v10a2 2 0 002 2h6a2 2 0 002-2V9a2 2 0 00-2-2" />
+                            </svg>
+                        </div>
+                        <h3>OHSP (Open High School)</h3>
+                        <p>Modular program for working students, supported by the Local School Board with Saturday
+                            classes.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Flexible Saturday schedule</li>
+                            <li>Modular learning approach</li>
+                            <li>For working students</li>
+                            <li>Local School Board support</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+            <!-- Senior High School Programs -->
+            <div>
+                <h3 class="text-center mb-lg">🎯 Senior High School Programs (Grades 11-12)</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3>STEM Track</h3>
+                        <p>Science, Technology, Engineering, and Mathematics track for students pursuing careers in
+                            technical fields.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Advanced Mathematics and Statistics</li>
+                            <li>Physics, Chemistry, and Biology</li>
+                            <li>Research and Inquiry</li>
+                            <li>Pre-Calculus and Basic Calculus</li>
+                            <li>Computer Programming basics</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3>ABM Track</h3>
+                        <p>Accountancy, Business, and Management track preparing students for business and
+                            entrepreneurship.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Fundamentals of Accountancy</li>
+                            <li>Business Mathematics and Ethics</li>
+                            <li>Organization and Management</li>
+                            <li>Business Finance and Marketing</li>
+                            <li>Entrepreneurship development</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3>HUMSS Track</h3>
+                        <p>Humanities and Social Sciences track for students interested in social sciences and liberal
+                            arts.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Creative Writing and Reading</li>
+                            <li>Philippine Politics and Governance</li>
+                            <li>World Religions and Belief Systems</li>
+                            <li>Trends, Networks and Critical Thinking</li>
+                            <li>Community Engagement and Research</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <h3>TVL Track</h3>
+                        <p>Technical-Vocational-Livelihood track focusing on practical skills and career preparation.
+                        </p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                            <li>Technical and vocational skills</li>
+                            <li>Livelihood and entrepreneurship</li>
+                            <li>Industry-relevant training</li>
+                            <li>Work immersion programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
     <!-- Admissions Section -->
-    <section id="admissions" class="section">
+    <section id="admissions" class="section section-alt">
         <div class="container">
-            <h2>Admissions</h2>
-            <div class="admissions-content">
-                <div class="admissions-text">
-                    <h3>How to Enroll</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <ol>
-                        <li>Submit application form</li>
-                        <li>Present required documents</li>
-                        <li>Take entrance examination</li>
-                        <li>Interview with guidance counselor</li>
-                        <li>Complete enrollment process</li>
-                    </ol>
-                </div>
-                <div class="admissions-image">
-                    <div class="placeholder-image">
-                        <span>School Campus Image</span>
+            <div class="text-center mb-xl">
+                <h2>Admissions Process</h2>
+                <p>Join our community of learners and begin your journey towards academic excellence.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Enrollment Steps</h3>
+                    <p>Follow these simple steps to become part of the SNHS family:</p>
+                    <div style="margin-top: 2rem;">
+                        <div class="card" style="margin-bottom: 1rem; padding: 1.5rem;">
+                            <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem;">1. Application Form</h4>
+                            <p style="margin-bottom: 0;">Complete and submit the enrollment application form with
+                                accurate information.</p>
+                        </div>
+                        <div class="card" style="margin-bottom: 1rem; padding: 1.5rem;">
+                            <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem;">2. Required Documents</h4>
+                            <p style="margin-bottom: 0;">Submit birth certificate, report card, good moral certificate,
+                                and other required documents.</p>
+                        </div>
+                        <div class="card" style="margin-bottom: 1rem; padding: 1.5rem;">
+                            <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem;">3. Assessment</h4>
+                            <p style="margin-bottom: 0;">Take the entrance examination and participate in the interview
+                                process.</p>
+                        </div>
+                        <div class="card" style="margin-bottom: 1rem; padding: 1.5rem;">
+                            <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem;">4. Enrollment</h4>
+                            <p style="margin-bottom: 0;">Complete the enrollment process and prepare for the academic
+                                year.</p>
+                        </div>
                     </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Enrollment Inquiry</h3>
+                    <form>
+                        <div class="form-row">
+                            <input type="text" class="form-input" placeholder="Student's Full Name" required>
+                            <input type="email" class="form-input" placeholder="Parent's Email" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" class="form-input" placeholder="Contact Number" required>
+                            <select class="form-input" required>
+                                <option value="">Select Grade Level</option>
+                                <option value="grade7">Grade 7</option>
+                                <option value="grade8">Grade 8</option>
+                                <option value="grade9">Grade 9</option>
+                                <option value="grade10">Grade 10</option>
+                                <option value="grade11">Grade 11</option>
+                                <option value="grade12">Grade 12</option>
+                            </select>
+                        </div>
+                        <select class="form-input" required>
+                            <option value="">Select Track (for SHS)</option>
+                            <option value="stem">STEM</option>
+                            <option value="abm">ABM</option>
+                            <option value="humss">HUMSS</option>
+                            <option value="tvl">TVL</option>
+                            <option value="na">Not Applicable (JHS)</option>
+                        </select>
+                        <textarea class="form-textarea" placeholder="Additional Questions or Comments"
+                            rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Events Section -->
-    <section id="events" class="section section-alt">
+    <section id="events" class="section">
         <div class="container">
-            <h2>School Events & Announcements</h2>
+            <div class="text-center mb-xl">
+                <h2>Upcoming Events & Activities</h2>
+                <p>Stay updated with the latest school events, activities, and important announcements.</p>
+            </div>
             <div class="events-grid">
                 <div class="event-card">
-                    <h3>Science Fair 2024</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <span class="event-date">March 15, 2024</span>
+                    <div class="event-image">
+                        <span>🔬 Science Fair</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Annual Science Fair 2025</h3>
+                        <p>Showcase of innovative projects and scientific discoveries by our talented STEM students.
+                            Featuring experiments, research presentations, and interactive demonstrations.</p>
+                        <span class="event-date">March 15, 2025</span>
+                    </div>
                 </div>
                 <div class="event-card">
-                    <h3>Graduation Ceremony</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <span class="event-date">April 20, 2024</span>
+                    <div class="event-image">
+                        <span>🎓 Graduation</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Graduation Ceremony</h3>
+                        <p>Celebrate the achievements of our graduating class as they embark on their next journey in
+                            higher education and career development.</p>
+                        <span class="event-date">April 20, 2025</span>
+                    </div>
                 </div>
                 <div class="event-card">
-                    <h3>Sports Festival</h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <span class="event-date">May 10, 2024</span>
+                    <div class="event-image">
+                        <span>🏆 Sports Fest</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Intramural Sports Festival</h3>
+                        <p>Annual sports competition featuring basketball, volleyball, track and field, and other
+                            athletic events promoting teamwork and sportsmanship.</p>
+                        <span class="event-date">May 10, 2025</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <span>🎭 Cultural Night</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Cultural Arts Festival</h3>
+                        <p>Celebration of Filipino culture through traditional dances, music performances, and artistic
+                            presentations by our talented students.</p>
+                        <span class="event-date">June 5, 2025</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <span>💼 Career Fair</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Career Guidance Fair</h3>
+                        <p>Connect with industry professionals, explore career opportunities, and learn about different
+                            college programs and scholarship opportunities.</p>
+                        <span class="event-date">July 12, 2025</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <span>📚 Book Week</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>National Book Week</h3>
+                        <p>Promote literacy and love for reading through book fairs, storytelling sessions, literary
+                            competitions, and author visits.</p>
+                        <span class="event-date">August 18, 2025</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-content">
+            <div class="text-center mb-xl">
+                <h2>Get in Touch</h2>
+                <p>We're here to help with any questions about our school, programs, or enrollment process.</p>
+            </div>
+            <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3>Address</h3>
-                        <p>Sagay National High School<br>Sagay City, Negros Occidental<br>Philippines</p>
+                        <h3>📍 School Address</h3>
+                        <p>Sagay National High School<br>Sagay City, Negros Occidental<br>Philippines 6122</p>
                     </div>
                     <div class="contact-item">
-                        <h3>Phone</h3>
-                        <p>(034) 123-4567</p>
+                        <h3>📞 Contact Numbers</h3>
+                        <p>Main Office: (034) 123-4567<br>Registrar: (034) 123-4568<br>Guidance Office: (034) 123-4569
+                        </p>
                     </div>
                     <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>info@snhs.edu.ph</p>
+                        <h3>✉️ Email Addresses</h3>
+                        <p>General Inquiries: info@snhs.edu.ph<br>Admissions: admissions@snhs.edu.ph<br>Principal:
+                            principal@snhs.edu.ph</p>
                     </div>
                     <div class="contact-item">
-                        <h3>Office Hours</h3>
-                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 12:00 PM</p>
+                        <h3>🕒 Office Hours</h3>
+                        <p>Monday - Friday: 7:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 12:00 PM<br>Sunday: Closed</p>
                     </div>
                 </div>
                 <div class="contact-form">
                     <h3>Send us a Message</h3>
                     <form>
                         <div class="form-row">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="text" class="form-input" placeholder="Your Full Name" required>
+                            <input type="email" class="form-input" placeholder="Your Email Address" required>
                         </div>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <div class="form-row">
+                            <input type="tel" class="form-input" placeholder="Contact Number" required>
+                            <select class="form-input" required>
+                                <option value="">Select Inquiry Type</option>
+                                <option value="admissions">Admissions</option>
+                                <option value="academics">Academic Programs</option>
+                                <option value="general">General Information</option>
+                                <option value="events">Events & Activities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-input" placeholder="Subject" required>
+                        <textarea class="form-textarea" placeholder="Your Message" rows="5" required></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
@@ -228,11 +651,95 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sagay National High School. All rights reserved.</p>
+                <p>&copy; 2025 Sagay National High School. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    
+    <script src="./assets/js/enhanced-interactions.js"></script>
+    <script>
+        // Modern JavaScript for SNHS Website
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+
+                    if (target) {
+                        const navHeight = document.querySelector('.navbar').offsetHeight;
+                        let targetPosition;
+
+                        // Special handling for hero section (top of page)
+                        if (targetId === '#hero') {
+                            targetPosition = 0;
+                        } else {
+                            targetPosition = target.offsetTop - navHeight - 20;
+                        }
+
+                        // Update active navigation state
+                        document.querySelectorAll('.nav-menu a').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        this.classList.add('active');
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Update active navigation on scroll
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+            window.addEventListener('scroll', () => {
+                let current = 'hero'; // Default to hero section
+                const scrollPosition = window.pageYOffset + 150;
+
+                // Check if we're at the very top
+                if (window.pageYOffset < 100) {
+                    current = 'hero';
+                } else {
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.clientHeight;
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                            current = section.getAttribute('id');
+                        }
+                    });
+                }
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Additional page-specific enhancements
+            console.log('SNHS Homepage loaded successfully');
+        });
+    </script>
 </body>
+
 </html>
+
+
+<!-- 
+    HISTORY
+    The dream of having a secondary school in our city after World War II was realized during the term of the late Mayor Jose B Puey, Sr. and Vice Mayor Amalio R. Cueva, Sr. It was on school year 1948-1949 that the first secondary school in the then municipality was formally opened bearing the name Sagay National High School (SNHS). SNHS now pays its gratitude to the ten principals who have served her and to our present principal, Mrs. Vilia G. Tupas.
+    
+    The school started with 218 enrollees. Now, the 800, 000 square-meter school contains 13 personnel, 144 teachers, and 5, 022 students.
+
+    Sagay National High School (SNHS) is a student-friendly school with conducive learning environment, modern facilities and strong stakeholders’ partnership where students are imbued with integrity and industry, and are competent and adaptive to their respective field of endeavor.
+
+    Sagay National high School is committed to provide basic, quality and relevant curricula through formal and alternative modes of delivery responsive to learners’ need with the expertise of high morale and competent faculty and staff; with the supervision of an efficient and effective school head sustained by a strong stakeholders’ partnership.
+​
+
+-->
