@@ -1,0 +1,340 @@
+{
+  "categories": [
+    {
+      "id": "academic",
+      "name": "Academic",
+      "description": "Discussions about subjects, homework, and academic activities",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "events",
+      "name": "School Events",
+      "description": "Information and discussions about school events and activities",
+      "color": "#10b981"
+    },
+    {
+      "id": "general",
+      "name": "General Discussion",
+      "description": "General topics and casual conversations",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "announcements",
+      "name": "Announcements",
+      "description": "Official school announcements and important notices",
+      "color": "#f59e0b"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post_001",
+      "title": "Science Fair Project Ideas - Need Help!",
+      "category": "academic",
+      "author": {
+        "id": "student123",
+        "name": "Juan Dela Cruz",
+        "displayName": "Juan D.",
+        "grade": "Grade 10",
+        "track": "STEM",
+        "avatar": null
+      },
+      "content": "Hey everyone! I'm working on my science fair project and I'm looking for some innovative ideas related to renewable energy or robotics. Has anyone worked on similar projects before? I'd love to hear your experiences and any tips you might have!\n\nI'm particularly interested in:\n- Solar energy applications\n- Simple robotics projects\n- Environmental sustainability topics\n\nThanks in advance for any suggestions!",
+      "timestamp": "2025-01-14T10:30:00Z",
+      "lastActivity": "2025-01-15T08:45:00Z",
+      "views": 45,
+      "likes": 8,
+      "replies": [
+        {
+          "id": "reply_001",
+          "author": {
+            "id": "miguel.torres",
+            "name": "Miguel Torres",
+            "displayName": "Miguel T.",
+            "grade": "Grade 12",
+            "track": "STEM",
+            "avatar": null
+          },
+          "content": "Great topic choice! I did a solar-powered water purification system last year. It was challenging but really rewarding. I'd suggest starting with something simple like a solar phone charger and then scaling up. Happy to share my research if you're interested!",
+          "timestamp": "2025-01-14T14:20:00Z",
+          "likes": 5
+        },
+        {
+          "id": "reply_002",
+          "author": {
+            "id": "isabella.cruz",
+            "name": "Isabella Cruz",
+            "displayName": "Bella C.",
+            "grade": "Grade 10",
+            "track": "SPA",
+            "avatar": null
+          },
+          "content": "You could also consider combining art and science! Maybe a kinetic sculpture powered by renewable energy? It would be unique and visually appealing for the fair.",
+          "timestamp": "2025-01-15T08:45:00Z",
+          "likes": 3
+        }
+      ]
+    },
+    {
+      "id": "post_002",
+      "title": "Intramural Sports Festival 2025 - Team Registration",
+      "category": "events",
+      "author": {
+        "id": "carlos.mendoza",
+        "name": "Carlos Mendoza",
+        "displayName": "Carlos M.",
+        "grade": "Grade 9",
+        "track": "Regular",
+        "avatar": null
+      },
+      "content": "Attention all students! The Intramural Sports Festival 2025 is coming up in March. We're now accepting team registrations for the following sports:\n\n🏀 Basketball (Boys & Girls)\n🏐 Volleyball (Boys & Girls)\n⚽ Football (Boys & Girls)\n🏃‍♂️ Track and Field\n🏓 Table Tennis\n🏸 Badminton\n\nRegistration deadline: February 15, 2025\nFestival dates: March 10-15, 2025\n\nTo register your team, please contact your PE teacher or visit the Sports Office. Let's make this the best intramural ever!\n\n#SNHSSports #Intramural2025",
+      "timestamp": "2025-01-13T15:00:00Z",
+      "lastActivity": "2025-01-14T16:30:00Z",
+      "views": 128,
+      "likes": 23,
+      "replies": [
+        {
+          "id": "reply_003",
+          "author": {
+            "id": "sofia.garcia",
+            "name": "Sofia Garcia",
+            "displayName": "Sofia G.",
+            "grade": "Grade 11",
+            "track": "TVL",
+            "avatar": null
+          },
+          "content": "This sounds amazing! Is there going to be a cheerleading competition too? Our section has been practicing some routines.",
+          "timestamp": "2025-01-13T18:30:00Z",
+          "likes": 7
+        },
+        {
+          "id": "reply_004",
+          "author": {
+            "id": "carlos.mendoza",
+            "name": "Carlos Mendoza",
+            "displayName": "Carlos M.",
+            "grade": "Grade 9",
+            "track": "Regular",
+            "avatar": null
+          },
+          "content": "@Sofia G. Yes! There will be a cheerleading competition on the opening day. I'll post more details about that soon. Great to hear your section is already practicing!",
+          "timestamp": "2025-01-14T07:15:00Z",
+          "likes": 4
+        },
+        {
+          "id": "reply_005",
+          "author": {
+            "id": "rafael.lopez",
+            "name": "Rafael Lopez",
+            "displayName": "Raf L.",
+            "grade": "Grade 8",
+            "track": "Regular",
+            "avatar": null
+          },
+          "content": "Can Grade 8 students participate in all events? I'm really interested in table tennis and badminton.",
+          "timestamp": "2025-01-14T16:30:00Z",
+          "likes": 2
+        }
+      ]
+    },
+    {
+      "id": "post_003",
+      "title": "Study Group for Math - Algebra and Geometry",
+      "category": "academic",
+      "author": {
+        "id": "2024-001",
+        "name": "Maria Santos",
+        "displayName": "Maria S.",
+        "grade": "Grade 11",
+        "track": "ABM",
+        "avatar": null
+      },
+      "content": "Hi everyone! I'm organizing a study group for Math, specifically focusing on Algebra and Geometry. We'll meet every Saturday afternoon in the library from 2:00 PM to 4:00 PM.\n\nWhat we'll cover:\n- Quadratic equations and functions\n- Geometric proofs and theorems\n- Problem-solving strategies\n- Practice tests and exercises\n\nAll grade levels welcome! If you're interested, please reply below or message me directly. Let's help each other succeed in Math! 📚✨",
+      "timestamp": "2025-01-12T09:15:00Z",
+      "lastActivity": "2025-01-14T11:20:00Z",
+      "views": 67,
+      "likes": 15,
+      "replies": [
+        {
+          "id": "reply_006",
+          "author": {
+            "id": "rafael.lopez",
+            "name": "Rafael Lopez",
+            "displayName": "Raf L.",
+            "grade": "Grade 8",
+            "track": "Regular",
+            "avatar": null
+          },
+          "content": "This is exactly what I need! I've been struggling with quadratic equations. Count me in for the study group. Thank you for organizing this!",
+          "timestamp": "2025-01-12T14:45:00Z",
+          "likes": 6
+        },
+        {
+          "id": "reply_007",
+          "author": {
+            "id": "student123",
+            "name": "Juan Dela Cruz",
+            "displayName": "Juan D.",
+            "grade": "Grade 10",
+            "track": "STEM",
+            "avatar": null
+          },
+          "content": "Great initiative! I'm pretty good with geometry proofs, so I'd be happy to help explain concepts to others while also learning from the group.",
+          "timestamp": "2025-01-14T11:20:00Z",
+          "likes": 4
+        }
+      ]
+    },
+    {
+      "id": "post_004",
+      "title": "Cultural Arts Festival - Call for Performers",
+      "category": "events",
+      "author": {
+        "id": "isabella.cruz",
+        "name": "Isabella Cruz",
+        "displayName": "Bella C.",
+        "grade": "Grade 10",
+        "track": "SPA",
+        "avatar": null
+      },
+      "content": "🎭 CALLING ALL TALENTED STUDENTS! 🎭\n\nThe Cultural Arts Festival is happening on June 5, 2025, and we're looking for amazing performers to showcase Filipino culture through:\n\n🎵 Traditional Music\n💃 Folk Dances\n🎨 Visual Arts Exhibition\n📚 Poetry and Spoken Word\n🎪 Theater Performances\n\nWhether you're a solo artist or part of a group, we want to see your talent! This is a great opportunity to celebrate our heritage and show your creativity.\n\nAuditions: February 20-22, 2025\nVenue: School Auditorium\nTime: 3:00 PM - 5:00 PM\n\nInterested? Drop a comment below or visit the Arts Department office. Let's make this festival unforgettable! 🇵🇭✨",
+      "timestamp": "2025-01-11T13:30:00Z",
+      "lastActivity": "2025-01-13T17:45:00Z",
+      "views": 89,
+      "likes": 31,
+      "replies": [
+        {
+          "id": "reply_008",
+          "author": {
+            "id": "juan.delacruz",
+            "name": "Ana Rodriguez",
+            "displayName": "Ana R.",
+            "grade": "Grade 12",
+            "track": "HUMSS",
+            "avatar": null
+          },
+          "content": "I'd love to participate in the poetry section! I've been writing pieces about Filipino history and culture. This sounds like the perfect platform to share them.",
+          "timestamp": "2025-01-11T16:20:00Z",
+          "likes": 8
+        },
+        {
+          "id": "reply_009",
+          "author": {
+            "id": "sofia.garcia",
+            "name": "Sofia Garcia",
+            "displayName": "Sofia G.",
+            "grade": "Grade 11",
+            "track": "TVL",
+            "avatar": null
+          },
+          "content": "Our TVL section has been practicing traditional Filipino dances. We'd love to perform Tinikling and Singkil. How do we sign up as a group?",
+          "timestamp": "2025-01-13T17:45:00Z",
+          "likes": 12
+        }
+      ]
+    },
+    {
+      "id": "post_005",
+      "title": "Tips for Effective Online Learning",
+      "category": "general",
+      "author": {
+        "id": "miguel.torres",
+        "name": "Miguel Torres",
+        "displayName": "Miguel T.",
+        "grade": "Grade 12",
+        "track": "STEM",
+        "avatar": null
+      },
+      "content": "With some classes still being conducted online, I thought I'd share some tips that have helped me stay focused and productive:\n\n💻 **Tech Setup:**\n- Use a reliable internet connection\n- Have backup devices ready\n- Keep your camera and microphone working\n\n📚 **Study Environment:**\n- Find a quiet, dedicated study space\n- Good lighting is essential\n- Minimize distractions (phone, social media)\n\n⏰ **Time Management:**\n- Follow a consistent schedule\n- Take regular breaks (Pomodoro technique works!)\n- Set daily goals and track progress\n\n🤝 **Stay Connected:**\n- Participate actively in discussions\n- Form virtual study groups\n- Don't hesitate to ask questions\n\nWhat strategies work best for you? Share your tips below!",
+      "timestamp": "2025-01-10T08:00:00Z",
+      "lastActivity": "2025-01-12T14:30:00Z",
+      "views": 156,
+      "likes": 42,
+      "replies": [
+        {
+          "id": "reply_010",
+          "author": {
+            "id": "2024-001",
+            "name": "Maria Santos",
+            "displayName": "Maria S.",
+            "grade": "Grade 11",
+            "track": "ABM",
+            "avatar": null
+          },
+          "content": "Great tips! I'd add that taking handwritten notes during online classes helps me retain information better than just typing. Also, recording sessions (when allowed) for review later is super helpful.",
+          "timestamp": "2025-01-10T12:30:00Z",
+          "likes": 15
+        },
+        {
+          "id": "reply_011",
+          "author": {
+            "id": "carlos.mendoza",
+            "name": "Carlos Mendoza",
+            "displayName": "Carlos M.",
+            "grade": "Grade 9",
+            "track": "Regular",
+            "avatar": null
+          },
+          "content": "The Pomodoro technique is a game-changer! 25 minutes of focused study, then a 5-minute break. It really helps with concentration, especially during long online sessions.",
+          "timestamp": "2025-01-12T14:30:00Z",
+          "likes": 9
+        }
+      ]
+    },
+    {
+      "id": "post_006",
+      "title": "ANNOUNCEMENT: New Library Hours and Study Areas",
+      "category": "announcements",
+      "author": {
+        "id": "admin_library",
+        "name": "Library Staff",
+        "displayName": "SNHS Library",
+        "grade": "Staff",
+        "track": "Administration",
+        "avatar": null
+      },
+      "content": "📚 IMPORTANT LIBRARY UPDATE 📚\n\nEffective January 20, 2025, the SNHS Library will have extended hours and new study areas:\n\n🕐 **New Operating Hours:**\nMonday - Friday: 6:30 AM - 7:00 PM\nSaturday: 8:00 AM - 5:00 PM\nSunday: 1:00 PM - 5:00 PM\n\n📖 **New Facilities:**\n- Silent Study Zone (2nd floor)\n- Group Discussion Rooms (bookable)\n- Computer Lab with 20 new units\n- Printing and Scanning Station\n\n📋 **Library Rules Reminder:**\n- Valid ID required for entry\n- No food or drinks (water bottles allowed)\n- Mobile phones on silent mode\n- Respect quiet zones\n\n📞 For room bookings, call ext. 123 or visit the circulation desk.\n\nWe're excited to serve you better with these improvements!",
+      "timestamp": "2025-01-09T07:00:00Z",
+      "lastActivity": "2025-01-11T16:15:00Z",
+      "views": 234,
+      "likes": 67,
+      "replies": [
+        {
+          "id": "reply_012",
+          "author": {
+            "id": "juan.delacruz",
+            "name": "Ana Rodriguez",
+            "displayName": "Ana R.",
+            "grade": "Grade 12",
+            "track": "HUMSS",
+            "avatar": null
+          },
+          "content": "This is fantastic! The extended hours will be so helpful for us Grade 12 students preparing for college entrance exams. Thank you for these improvements!",
+          "timestamp": "2025-01-09T15:30:00Z",
+          "likes": 18
+        },
+        {
+          "id": "reply_013",
+          "author": {
+            "id": "rafael.lopez",
+            "name": "Rafael Lopez",
+            "displayName": "Raf L.",
+            "grade": "Grade 8",
+            "track": "Regular",
+            "avatar": null
+          },
+          "content": "The new computer lab sounds amazing! Will there be any programming software installed? I'm learning to code and would love to practice there.",
+          "timestamp": "2025-01-11T16:15:00Z",
+          "likes": 8
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "totalPosts": 6,
+    "totalReplies": 13,
+    "totalViews": 719,
+    "totalLikes": 186,
+    "activeUsers": 8,
+    "categoriesCount": 4
+  }
+}

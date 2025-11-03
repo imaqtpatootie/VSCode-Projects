@@ -1,0 +1,235 @@
+{
+  "elections": [
+    {
+      "id": "election_2025_sg",
+      "title": "Student Government Elections 2025",
+      "description": "Annual student government elections to select representatives for the academic year 2025-2026. Vote for your preferred candidates who will represent your voice in school matters.",
+      "startDate": "2025-03-01T00:00:00Z",
+      "endDate": "2025-03-07T23:59:59Z",
+      "status": "upcoming",
+      "type": "election",
+      "eligibleVoters": ["Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"],
+      "positions": [
+        {
+          "id": "president",
+          "title": "Student Body President",
+          "description": "The highest student leadership position, representing all students in school governance and decision-making.",
+          "maxVotes": 1,
+          "candidates": [
+            {
+              "id": "candidate_001",
+              "name": "Maria Santos",
+              "grade": "Grade 11",
+              "track": "ABM",
+              "section": "Rizal",
+              "platform": "Improving student facilities, enhancing academic support programs, and promoting environmental sustainability initiatives throughout the campus.",
+              "experience": "Current Class President, Member of Student Council for 2 years, Debate Team Captain",
+              "avatar": null
+            },
+            {
+              "id": "candidate_002",
+              "name": "Miguel Torres",
+              "grade": "Grade 12",
+              "track": "STEM",
+              "section": "Newton",
+              "platform": "Advancing technology integration in learning, establishing peer tutoring programs, and creating more opportunities for student innovation and creativity.",
+              "experience": "Robotics Club President, Science Fair Champion, Student Council Treasurer",
+              "avatar": null
+            }
+          ]
+        },
+        {
+          "id": "vice_president",
+          "title": "Vice President",
+          "description": "Second-in-command who assists the president and leads specific student initiatives and committees.",
+          "maxVotes": 1,
+          "candidates": [
+            {
+              "id": "candidate_003",
+              "name": "Ana Rodriguez",
+              "grade": "Grade 12",
+              "track": "HUMSS",
+              "section": "Bonifacio",
+              "platform": "Strengthening student voice in academic policies, improving communication between students and faculty, and promoting arts and cultural programs.",
+              "experience": "School Newspaper Editor-in-Chief, Drama Club President, Honor Society Member",
+              "avatar": null
+            },
+            {
+              "id": "candidate_004",
+              "name": "Carlos Mendoza",
+              "grade": "Grade 9",
+              "track": "Regular",
+              "section": "Mabini",
+              "platform": "Enhancing sports and recreational facilities, promoting student wellness programs, and fostering school spirit through various activities.",
+              "experience": "Basketball Team Captain, Sports Committee Head, Peer Mediator",
+              "avatar": null
+            }
+          ]
+        },
+        {
+          "id": "secretary",
+          "title": "Secretary",
+          "description": "Responsible for maintaining records, communications, and coordinating student government activities.",
+          "maxVotes": 1,
+          "candidates": [
+            {
+              "id": "candidate_005",
+              "name": "Sofia Garcia",
+              "grade": "Grade 11",
+              "track": "TVL",
+              "section": "Luna",
+              "platform": "Improving student information systems, organizing efficient record-keeping, and ensuring transparent communication of student government activities.",
+              "experience": "Class Secretary for 3 years, Event Coordinator, Student Volunteer Program Leader",
+              "avatar": null
+            }
+          ]
+        },
+        {
+          "id": "treasurer",
+          "title": "Treasurer",
+          "description": "Manages student government finances and oversees budget allocation for student activities and projects.",
+          "maxVotes": 1,
+          "candidates": [
+            {
+              "id": "candidate_006",
+              "name": "Isabella Cruz",
+              "grade": "Grade 10",
+              "track": "SPA",
+              "section": "Da Vinci",
+              "platform": "Ensuring transparent financial management, maximizing budget efficiency for student programs, and establishing fundraising initiatives for school improvements.",
+              "experience": "Art Club Treasurer, Fundraising Committee Member, Math Olympiad Participant",
+              "avatar": null
+            },
+            {
+              "id": "candidate_007",
+              "name": "Rafael Lopez",
+              "grade": "Grade 8",
+              "track": "Regular",
+              "section": "Lapu-Lapu",
+              "platform": "Implementing digital financial tracking systems, promoting cost-effective student activities, and ensuring equitable budget distribution across all grade levels.",
+              "experience": "Class Treasurer, Computer Club Member, Academic Excellence Awardee",
+              "avatar": null
+            }
+          ]
+        }
+      ],
+      "results": {
+        "totalVotes": 0,
+        "positions": {
+          "president": {
+            "candidate_001": 0,
+            "candidate_002": 0
+          },
+          "vice_president": {
+            "candidate_003": 0,
+            "candidate_004": 0
+          },
+          "secretary": {
+            "candidate_005": 0
+          },
+          "treasurer": {
+            "candidate_006": 0,
+            "candidate_007": 0
+          }
+        }
+      },
+      "voterTurnout": {
+        "totalEligible": 5022,
+        "totalVoted": 0,
+        "percentage": 0
+      }
+    },
+    {
+      "id": "election_2024_sg_results",
+      "title": "Student Government Elections 2024 - Results",
+      "description": "Results from the previous student government elections held in March 2024.",
+      "startDate": "2024-03-01T00:00:00Z",
+      "endDate": "2024-03-07T23:59:59Z",
+      "status": "ended",
+      "type": "election",
+      "eligibleVoters": ["Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"],
+      "positions": [
+        {
+          "id": "president",
+          "title": "Student Body President",
+          "description": "The highest student leadership position.",
+          "maxVotes": 1,
+          "candidates": [
+            {
+              "id": "prev_candidate_001",
+              "name": "Alexandra Reyes",
+              "grade": "Grade 12",
+              "track": "STEM",
+              "section": "Einstein",
+              "platform": "Technology integration and student welfare improvements.",
+              "experience": "Student Council Vice President, Science Club President",
+              "avatar": null
+            },
+            {
+              "id": "prev_candidate_002",
+              "name": "Joshua Tan",
+              "grade": "Grade 11",
+              "track": "ABM",
+              "section": "Rizal",
+              "platform": "Enhanced student services and academic support programs.",
+              "experience": "Class President, Debate Team Member",
+              "avatar": null
+            }
+          ]
+        }
+      ],
+      "results": {
+        "totalVotes": 3847,
+        "positions": {
+          "president": {
+            "prev_candidate_001": 2156,
+            "prev_candidate_002": 1691
+          }
+        }
+      },
+      "voterTurnout": {
+        "totalEligible": 4856,
+        "totalVoted": 3847,
+        "percentage": 79.2
+      }
+    }
+  ],
+  "votingHistory": [
+    {
+      "userId": "student123",
+      "elections": [
+        {
+          "electionId": "election_2024_sg_results",
+          "votedAt": "2024-03-05T14:30:00Z",
+          "positions": {
+            "president": "prev_candidate_001"
+          }
+        }
+      ]
+    },
+    {
+      "userId": "2024-001",
+      "elections": [
+        {
+          "electionId": "election_2024_sg_results",
+          "votedAt": "2024-03-04T10:15:00Z",
+          "positions": {
+            "president": "prev_candidate_001"
+          }
+        }
+      ]
+    },
+    {
+      "userId": "juan.delacruz",
+      "elections": [
+        {
+          "electionId": "election_2024_sg_results",
+          "votedAt": "2024-03-06T16:45:00Z",
+          "positions": {
+            "president": "prev_candidate_002"
+          }
+        }
+      ]
+    }
+  ]
+}

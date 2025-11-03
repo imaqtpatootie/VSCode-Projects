@@ -1,0 +1,244 @@
+{
+  "users": [
+    {
+      "id": "student123",
+      "username": "student123",
+      "userType": "student",
+      "profile": {
+        "firstName": "Juan",
+        "lastName": "Dela Cruz",
+        "displayName": "Juan D.",
+        "studentId": "2024-001",
+        "grade": "Grade 10",
+        "track": "STEM",
+        "section": "Einstein",
+        "bio": "Aspiring scientist interested in robotics and AI. Love participating in science fairs and coding competitions.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": true,
+        "emailUpdates": false,
+        "theme": "light",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-15T08:30:00Z",
+        "forumPosts": 5,
+        "votesParticipated": 3,
+        "totalLogins": 45,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "2024-001",
+      "username": "2024-001",
+      "userType": "student",
+      "profile": {
+        "firstName": "Maria",
+        "lastName": "Santos",
+        "displayName": "Maria S.",
+        "studentId": "2024-002",
+        "grade": "Grade 11",
+        "track": "ABM",
+        "section": "Rizal",
+        "bio": "Future entrepreneur with a passion for business and finance. Currently working on a startup idea for sustainable products.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": true,
+        "emailUpdates": true,
+        "theme": "light",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-14T16:45:00Z",
+        "forumPosts": 12,
+        "votesParticipated": 5,
+        "totalLogins": 67,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "juan.delacruz",
+      "username": "juan.delacruz",
+      "userType": "student",
+      "profile": {
+        "firstName": "Ana",
+        "lastName": "Rodriguez",
+        "displayName": "Ana R.",
+        "studentId": "2024-003",
+        "grade": "Grade 12",
+        "track": "HUMSS",
+        "section": "Bonifacio",
+        "bio": "Creative writer and aspiring journalist. Editor of the school newspaper and passionate about social issues.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": true,
+        "emailUpdates": false,
+        "theme": "light",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-15T07:20:00Z",
+        "forumPosts": 8,
+        "votesParticipated": 4,
+        "totalLogins": 52,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "carlos.mendoza",
+      "username": "carlos.mendoza",
+      "userType": "student",
+      "profile": {
+        "firstName": "Carlos",
+        "lastName": "Mendoza",
+        "displayName": "Carlos M.",
+        "studentId": "2024-004",
+        "grade": "Grade 9",
+        "track": "Regular",
+        "section": "Mabini",
+        "bio": "Sports enthusiast and team captain of the basketball team. Also interested in mathematics and problem-solving.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": true,
+        "emailUpdates": true,
+        "theme": "light",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-13T19:15:00Z",
+        "forumPosts": 3,
+        "votesParticipated": 2,
+        "totalLogins": 28,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "sofia.garcia",
+      "username": "sofia.garcia",
+      "userType": "student",
+      "profile": {
+        "firstName": "Sofia",
+        "lastName": "Garcia",
+        "displayName": "Sofia G.",
+        "studentId": "2024-005",
+        "grade": "Grade 11",
+        "track": "TVL",
+        "section": "Luna",
+        "bio": "Passionate about culinary arts and hospitality management. Dreams of opening her own restaurant someday.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": false,
+        "emailUpdates": true,
+        "theme": "light",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-14T14:30:00Z",
+        "forumPosts": 7,
+        "votesParticipated": 3,
+        "totalLogins": 41,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "miguel.torres",
+      "username": "miguel.torres",
+      "userType": "student",
+      "profile": {
+        "firstName": "Miguel",
+        "lastName": "Torres",
+        "displayName": "Miguel T.",
+        "studentId": "2024-006",
+        "grade": "Grade 12",
+        "track": "STEM",
+        "section": "Newton",
+        "bio": "Future engineer with interests in renewable energy and environmental sustainability. Member of the robotics club.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": true,
+        "emailUpdates": false,
+        "theme": "dark",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-15T09:45:00Z",
+        "forumPosts": 15,
+        "votesParticipated": 6,
+        "totalLogins": 73,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "isabella.cruz",
+      "username": "isabella.cruz",
+      "userType": "student",
+      "profile": {
+        "firstName": "Isabella",
+        "lastName": "Cruz",
+        "displayName": "Bella C.",
+        "studentId": "2024-007",
+        "grade": "Grade 10",
+        "track": "SPA",
+        "section": "Da Vinci",
+        "bio": "Artist and performer passionate about theater and visual arts. Currently working on a mural project for the school.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": true,
+        "emailUpdates": true,
+        "theme": "light",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-14T11:20:00Z",
+        "forumPosts": 9,
+        "votesParticipated": 4,
+        "totalLogins": 38,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "rafael.lopez",
+      "username": "rafael.lopez",
+      "userType": "student",
+      "profile": {
+        "firstName": "Rafael",
+        "lastName": "Lopez",
+        "displayName": "Raf L.",
+        "studentId": "2024-008",
+        "grade": "Grade 8",
+        "track": "Regular",
+        "section": "Lapu-Lapu",
+        "bio": "Young tech enthusiast learning programming and web development. Enjoys playing chess and strategy games.",
+        "joinDate": "2024-08-15T00:00:00Z",
+        "avatar": null
+      },
+      "preferences": {
+        "notifications": true,
+        "emailUpdates": false,
+        "theme": "dark",
+        "language": "en"
+      },
+      "activity": {
+        "lastLogin": "2025-01-15T06:30:00Z",
+        "forumPosts": 6,
+        "votesParticipated": 1,
+        "totalLogins": 22,
+        "accountCreated": "2024-08-15T00:00:00Z"
+      }
+    }
+  ]
+}
