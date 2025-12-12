@@ -13,6 +13,7 @@ let player = {
     name: "Jo",
     chips: 420
 }
+window.prompt("Enter username");
 // let playerName = "Jo"
 // let playerChips = 420
 let playerStatus = document.querySelector("#player-el")

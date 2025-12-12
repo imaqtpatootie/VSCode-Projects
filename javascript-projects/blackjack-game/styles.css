@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    padding: 0;
+    margin: 0;
+}
 .container {
     height: 100vh;
     display: flex;
@@ -38,14 +41,14 @@ h2 {
     font-weight: 600;
     margin-bottom: 1rem;
 }
-button {
+button, input {
     padding: 1rem 2rem;
     font-size: clamp(0.5rem, 1.3vw, 2rem);
     border-radius: 1000px;
     background-color: #051014;
     color: cyan;
     border: 1px solid cyan;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-bottom: 1rem;
     transition: color .15s ease, background-color .15s ease;
 }

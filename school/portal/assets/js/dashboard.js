@@ -43,12 +43,15 @@ class Dashboard {
             const votingHistory = await DataManager.getUserVotingHistory(this.user.id);
             
             // Calculate stats
+            const forumReplies = forumData?.posts?.reduce((count, post) => 
+                count + post.replies.filter(reply => reply.author.id === this.user.id).length, 0) || 0;
+            
             const stats = {
                 forumPosts: userPosts.length,
-                forumReplies: forumData?.posts?.reduce((count, post) => 
-                    count + post.replies.filter(reply => reply.author.id === this.user.id).length, 0) || 0,
+                forumReplies: forumReplies,
                 electionsVoted: votingHistory.elections.length,
-                pollsAnswered: votingHistory.polls.length
+                pollsAnswered: votingHistory.polls.length,
+                totalActivities: userPosts.length + forumReplies + votingHistory.elections.length + votingHistory.polls.length
             };
             
             // Get recent activity
@@ -173,211 +176,122 @@ class Dashboard {
         
         contentArea.innerHTML = `
             <div class="dashboard">
-                <!-- Welcome Section -->
-                <div class="dashboard-header">
-                    <div class="welcome-section">
-                        <h1>Welcome back, ${this.user.profile.displayName || this.user.profile.firstName}! 👋</h1>
-                        <p>Here's what's happening in your school community</p>
-                    </div>
-                    <div class="user-info-card">
+                <!-- Profile Section -->
+                <div class="profile-header-card">
+                    <div class="profile-avatar-section">
                         <div class="user-avatar-large">
                             ${this.getUserInitials()}
                         </div>
-                        <div class="user-details">
-                            <h3>${this.user.profile.firstName} ${this.user.profile.lastName}</h3>
-                            <p>${this.user.profile.grade} • ${this.user.profile.track}</p>
-                            <p class="section-info">${this.user.profile.section} Section</p>
-                        </div>
                     </div>
-                </div>
-                
-                <!-- Quick Stats -->
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-icon">💬</div>
-                        <div class="stat-content">
-                            <div class="stat-number">${stats.forumPosts}</div>
-                            <div class="stat-label">Forum Posts</div>
-                        </div>
+                    <div class="profile-info-section">
+                        <h2 class="profile-name">${this.user.profile.firstName} ${this.user.profile.lastName}</h2>
+                        <p class="profile-academic">${this.user.profile.grade} • ${this.user.profile.section} Section • ${this.user.profile.track}</p>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">💭</div>
-                        <div class="stat-content">
-                            <div class="stat-number">${stats.forumReplies}</div>
-                            <div class="stat-label">Replies</div>
+                    <div class="profile-stats-section">
+                        <div class="profile-stat-item">
+                            <div class="profile-stat-number">${stats.forumPosts}</div>
+                            <div class="profile-stat-label">Posts</div>
                         </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">🗳️</div>
-                        <div class="stat-content">
-                            <div class="stat-number">${stats.electionsVoted}</div>
-                            <div class="stat-label">Elections Voted</div>
+                        <div class="profile-stat-divider"></div>
+                        <div class="profile-stat-item">
+                            <div class="profile-stat-number">${stats.totalActivities}</div>
+                            <div class="profile-stat-label">Activities</div>
                         </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">📊</div>
-                        <div class="stat-content">
-                            <div class="stat-number">${stats.pollsAnswered}</div>
-                            <div class="stat-label">Polls Answered</div>
+                        <div class="profile-stat-divider"></div>
+                        <div class="profile-stat-item">
+                            <div class="profile-stat-number">${stats.pollsAnswered}</div>
+                            <div class="profile-stat-label">Polls</div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Welcome Card -->
-                <div class="dashboard-card welcome-card">
-                    <div class="card-content">
-                        <div class="welcome-content">
-                            <div class="welcome-text">
-                                <h2>Welcome back, ${this.user.profile.firstName}! 👋</h2>
-                                <p>Here's what's happening in your school community today.</p>
-                            </div>
-                            <div class="welcome-avatar">
-                                ${this.getUserAvatar('large')}
-                            </div>
+                        <div class="profile-stat-divider"></div>
+                        <div class="profile-stat-item">
+                            <div class="profile-stat-number">${stats.electionsVoted}</div>
+                            <div class="profile-stat-label">Votes</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Main Content Grid -->
                 <div class="dashboard-grid">
-                    <!-- Column 1: Quick Actions, Your Activity, Upcoming -->
-                    <div class="dashboard-column column-1">
-                        <!-- Quick Actions Card -->
-                        <div class="dashboard-card quick-actions-card">
-                            <div class="card-header">
-                                <h3>⚡ Quick Actions</h3>
-                            </div>
-                            <div class="card-content">
-                                <div class="quick-actions-grid">
-                                    <button class="quick-action-btn" onclick="ComponentRouter.navigateTo('activities')">
-                                        <div class="quick-action-icon">📚</div>
-                                        <div class="quick-action-text">Activities</div>
-                                    </button>
-                                    <button class="quick-action-btn" onclick="ComponentRouter.navigateTo('forum')">
-                                        <div class="quick-action-icon">💬</div>
-                                        <div class="quick-action-text">Forum</div>
-                                    </button>
-                                    <button class="quick-action-btn" onclick="ComponentRouter.navigateTo('voting')">
-                                        <div class="quick-action-icon">🗳️</div>
-                                        <div class="quick-action-text">Voting</div>
-                                    </button>
-                                    <button class="quick-action-btn" onclick="ComponentRouter.navigateTo('profile')">
-                                        <div class="quick-action-icon">👤</div>
-                                        <div class="quick-action-text">Profile</div>
-                                    </button>
-                                </div>
-                            </div>
+                    <!-- Recent Activity Card (Left - spans 2 rows) -->
+                    <div class="dashboard-card recent-activity-card">
+                        <div class="card-header">
+                            <h3>⚡ Recent Activity</h3>
                         </div>
-
-                        <!-- Your Activity Card -->
-                        <div class="dashboard-card stats-card">
-                            <div class="card-header">
-                                <h3>📊 Your Activity</h3>
-                            </div>
-                            <div class="card-content">
-                                <div class="activity-stats-grid">
-                                    <div class="activity-stat">
-                                        <div class="activity-stat-number">${stats.forumPosts}</div>
-                                        <div class="activity-stat-label">Forum Posts</div>
-                                    </div>
-                                    <div class="activity-stat">
-                                        <div class="activity-stat-number">${stats.forumReplies}</div>
-                                        <div class="activity-stat-label">Replies</div>
-                                    </div>
-                                    <div class="activity-stat">
-                                        <div class="activity-stat-number">${stats.electionsVoted}</div>
-                                        <div class="activity-stat-label">Elections Voted</div>
-                                    </div>
-                                    <div class="activity-stat">
-                                        <div class="activity-stat-number">${stats.pollsAnswered}</div>
-                                        <div class="activity-stat-label">Polls Answered</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Upcoming Items Card -->
-                        <div class="dashboard-card upcoming-card">
-                            <div class="card-header">
-                                <h3>📅 Upcoming</h3>
-                            </div>
-                            <div class="card-content">
-                                ${upcomingItems.length === 0 ? 
-                                    '<div class="empty-state">📆 No upcoming events or deadlines</div>' :
-                                    `
-                                    <div class="upcoming-list">
-                                        ${upcomingItems.slice(0, 3).map(item => `
-                                            <div class="upcoming-item">
-                                                <div class="upcoming-icon">${item.icon}</div>
-                                                <div class="upcoming-info">
-                                                    <div class="upcoming-main">
-                                                        <div class="upcoming-title">${item.title}</div>
-                                                    </div>
-                                                    <div class="upcoming-date">${UIUtils.formatDate(item.date, { hour: undefined, minute: undefined })}</div>
+                        <div class="card-content">
+                            ${recentActivity.length === 0 ? 
+                                '<div class="empty-state">🌟 Start participating to see your activity here!</div>' :
+                                `
+                                <div class="activity-list">
+                                    ${recentActivity.map(activity => `
+                                        <div class="activity-item">
+                                            <div class="activity-icon">${activity.icon}</div>
+                                            <div class="activity-info">
+                                                <div class="activity-main">
+                                                    <div class="activity-title">${activity.title}</div>
+                                                    <div class="activity-description">${activity.description}</div>
                                                 </div>
+                                                <div class="activity-time">${UIUtils.getRelativeTime(activity.timestamp)}</div>
                                             </div>
-                                        `).join('')}
-                                    </div>
-                                    `
-                                }
+                                        </div>
+                                    `).join('')}
+                                </div>
+                                `
+                            }
+                        </div>
+                    </div>
+
+                    <!-- School Community Card (Right - top) -->
+                    <div class="dashboard-card school-stats-card">
+                        <div class="card-header">
+                            <h3>🏫 School Community</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="school-stats-grid">
+                                <div class="school-stat">
+                                    <div class="school-stat-number">${quickStats.totalPosts}</div>
+                                    <div class="school-stat-label">Forum Posts</div>
+                                </div>
+                                <div class="school-stat">
+                                    <div class="school-stat-number">${quickStats.totalUsers}</div>
+                                    <div class="school-stat-label">Active Users</div>
+                                </div>
+                                <div class="school-stat">
+                                    <div class="school-stat-number">${quickStats.activeElections}</div>
+                                    <div class="school-stat-label">Active Elections</div>
+                                </div>
+                                <div class="school-stat">
+                                    <div class="school-stat-number">${quickStats.activePolls}</div>
+                                    <div class="school-stat-label">Active Polls</div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Column 2: Recent Activity, School Community -->
-                    <div class="dashboard-column column-2">
-                        <!-- Recent Activity Card -->
-                        <div class="dashboard-card recent-activity-card">
-                            <div class="card-header">
-                                <h3>⚡ Recent Activity</h3>
-                            </div>
-                            <div class="card-content">
-                                ${recentActivity.length === 0 ? 
-                                    '<div class="empty-state">🌟 Start participating to see your activity here!</div>' :
-                                    `
-                                    <div class="activity-list">
-                                        ${recentActivity.slice(0, 3).map(activity => `
-                                            <div class="activity-item">
-                                                <div class="activity-icon">${activity.icon}</div>
-                                                <div class="activity-info">
-                                                    <div class="activity-main">
-                                                        <div class="activity-title">${activity.title}</div>
-                                                    </div>
-                                                    <div class="activity-time">${UIUtils.getRelativeTime(activity.timestamp)}</div>
-                                                </div>
-                                            </div>
-                                        `).join('')}
-                                    </div>
-                                    `
-                                }
-                            </div>
+                    <!-- Upcoming Items Card (Right - bottom) -->
+                    <div class="dashboard-card upcoming-card">
+                        <div class="card-header">
+                            <h3>📅 Upcoming</h3>
                         </div>
-
-                        <!-- School Community Card -->
-                        <div class="dashboard-card school-stats-card">
-                            <div class="card-header">
-                                <h3>🏫 School Community</h3>
-                            </div>
-                            <div class="card-content">
-                                <div class="school-stats-grid">
-                                    <div class="school-stat">
-                                        <div class="school-stat-number">${quickStats.totalPosts}</div>
-                                        <div class="school-stat-label">Forum Posts</div>
-                                    </div>
-                                    <div class="school-stat">
-                                        <div class="school-stat-number">${quickStats.totalUsers}</div>
-                                        <div class="school-stat-label">Active Users</div>
-                                    </div>
-                                    <div class="school-stat">
-                                        <div class="school-stat-number">${quickStats.activeElections}</div>
-                                        <div class="school-stat-label">Active Elections</div>
-                                    </div>
-                                    <div class="school-stat">
-                                        <div class="school-stat-number">${quickStats.activePolls}</div>
-                                        <div class="school-stat-label">Active Polls</div>
-                                    </div>
+                        <div class="card-content">
+                            ${upcomingItems.length === 0 ? 
+                                '<div class="empty-state">📆 No upcoming events or deadlines</div>' :
+                                `
+                                <div class="upcoming-list">
+                                    ${upcomingItems.map(item => `
+                                        <div class="upcoming-item">
+                                            <div class="upcoming-icon">${item.icon}</div>
+                                            <div class="upcoming-info">
+                                                <div class="upcoming-main">
+                                                    <div class="upcoming-title">${item.title}</div>
+                                                    <div class="upcoming-description">${item.description}</div>
+                                                </div>
+                                                <div class="upcoming-date">${UIUtils.formatDate(item.date, { hour: undefined, minute: undefined })}</div>
+                                            </div>
+                                        </div>
+                                    `).join('')}
                                 </div>
-                            </div>
+                                `
+                            }
                         </div>
                     </div>
                 </div>
