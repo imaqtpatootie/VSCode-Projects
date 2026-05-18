@@ -522,7 +522,7 @@ body {
 
 /* Gift hover effects */
 #gift-img:hover {
-    background: url('./imgs/cringe.jpg') center/cover no-repeat;
+    background: url('./imgs/ok.jpg') center/cover no-repeat;
     transform: scale(1.05);
     border-color: var(--color-primary);
     box-shadow: 0 0 40px rgba(255, 107, 157, 0.6);
@@ -538,7 +538,7 @@ body {
 }
 
 #gift-gif:hover {
-    background: url('./imgs/vomit.gif') center/cover no-repeat;
+    background: url('./imgs/aprob.jpg') center/cover no-repeat;
     transform: scale(1.05);
     border-color: var(--color-accent);
     box-shadow: 0 0 40px rgba(168, 230, 207, 0.6);
@@ -554,7 +554,7 @@ body {
 }
 
 #gift-message:hover {
-    background: url('./imgs/greetings.gif') center/cover no-repeat;
+    background: url('./imgs/jo.jfif') center/cover no-repeat;
     transform: scale(1.05);
     border-color: var(--color-purple);
     box-shadow: 0 0 40px rgba(199, 125, 255, 0.6);
