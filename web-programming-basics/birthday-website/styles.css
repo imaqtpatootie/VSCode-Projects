@@ -522,7 +522,7 @@ body {
 
 /* Gift hover effects */
 #gift-img:hover {
-    background: url('./imgs/ok.jpg') center/cover no-repeat;
+    background: url('./imgs/femboy carlo.jpg') center/cover no-repeat;
     transform: scale(1.05);
     border-color: var(--color-primary);
     box-shadow: 0 0 40px rgba(255, 107, 157, 0.6);
